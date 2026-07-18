@@ -3,41 +3,24 @@ using UnityEngine.InputSystem;
 
 public class HorseInteraction : MonoBehaviour
 {
-    public InputAction interactAction; 
-    public Interactable currentInteractable; // the Interactable the player is currently standing near
+    public InputAction interactAction; // input action (E key) used to check if player wants to interact
+    public InteractionRange interactionRange; // drag the InteractionRange child object in here
 
     void Start()
     {
-        interactAction.Enable(); // enables game to listen for input from interact action
+        interactAction.Enable();
     }
 
     void Update()
     {
-        if (interactAction.WasPressedThisFrame() && currentInteractable != null)
+        if (interactAction.WasPressedThisFrame())
         {
-            currentInteractable.Interact();
-        }
-    }
+            Debug.Log("E pressed. Current interactable: " + interactionRange.currentInteractable); // confirms key press is detected and shows what's currently in range
 
-    void OnTriggerEnter(Collider other)
-    {
-        Interactable interactable = other.GetComponent<Interactable>();
-        if (interactable != null)
-        {
-            currentInteractable = interactable;
-            currentInteractable.playerInRange = true;
-            Debug.Log("In range of: " + interactable.interactionName);
-        }
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        Interactable interactable = other.GetComponent<Interactable>();
-        if (interactable != null && interactable == currentInteractable)
-        {
-            currentInteractable.playerInRange = false;
-            currentInteractable = null;
-            Debug.Log("Out of range of: " + interactable.interactionName);
+            if (interactionRange.currentInteractable != null)
+            {
+                interactionRange.currentInteractable.Interact();
+            }
         }
     }
 }

@@ -9,6 +9,10 @@ public class Interactable : MonoBehaviour
     {
         // runs automatically when the component is first added - reminds you to set up the collider correctly
         GetComponent<Collider>().isTrigger = true;
+
+        Rigidbody rb = gameObject.AddComponent<Rigidbody>();
+        rb.isKinematic = true;
+        rb.useGravity = false;
     }
 
     public virtual void Interact()
