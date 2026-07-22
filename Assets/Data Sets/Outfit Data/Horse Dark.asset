@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ea23c0d169eccb49b62efde148b85ad, type: 3}
+  m_Name: Horse Dark
+  m_EditorClassIdentifier: Assembly-CSharp::OutfitData
+  outfitName: Horse Outfit
+  outfitModelPrefab: {fileID: 8294723188592697892, guid: 14387ff4300cb4748b2796dc84ceb113, type: 3}

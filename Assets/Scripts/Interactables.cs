@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
-    public string interactionName = "Clue"; // what this object is, shown in prompts/logs later
+    public string interactionName = ""; // what this object is, shown in prompts/logs later
     public bool playerInRange = false;       // true when the player is standing in this object's trigger
 
     void Reset()
