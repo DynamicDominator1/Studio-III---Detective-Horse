@@ -1,10 +1,14 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using System.Collections.Generic;
 
 public class InventoryManager : MonoBehaviour
 {
-    public static InventoryManager Instance; // singleton reference, accessible from anywhere
-    public List<ClueData> collectedClues = new List<ClueData>(); // all clues picked up so far
+    public static InventoryManager Instance;
+    public List<ClueData> collectedClues = new List<ClueData>();
+    public int selectedClueIndex = 0; // which clue in the list is currently "selected"
+
+    public InputAction cycleClueAction; // temporary key to cycle through collected clues, for testing before UI exists
 
     void Awake()
     {
@@ -14,7 +18,20 @@ public class InventoryManager : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject); // prevents duplicate InventoryManagers if this scene loads again
+            Destroy(gameObject);
+        }
+    }
+
+    void Start()
+    {
+        cycleClueAction.Enable();
+    }
+
+    void Update()
+    {
+        if (cycleClueAction.WasPressedThisFrame())
+        {
+            CycleSelectedClue();
         }
     }
 
@@ -22,5 +39,13 @@ public class InventoryManager : MonoBehaviour
     {
         collectedClues.Add(clue);
         Debug.Log("Picked up clue: " + clue.clueName);
+    }
+
+    void CycleSelectedClue()
+    {
+        if (collectedClues.Count == 0) return;
+
+        selectedClueIndex = (selectedClueIndex + 1) % collectedClues.Count;
+        Debug.Log("Selected clue: " + collectedClues[selectedClueIndex].clueName);
     }
 }

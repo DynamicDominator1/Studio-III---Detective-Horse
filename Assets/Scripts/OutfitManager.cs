@@ -5,12 +5,12 @@ using System.Collections.Generic;
 public class OutfitManager : MonoBehaviour
 {
     public static OutfitManager Instance;
-    public OutfitData baseHorseFit; // drag the "No Outfit" / bare horse asset in here
-    public List<OutfitData> ownedOutfits = new List<OutfitData>(); // every outfit the player has picked up (does NOT include noOutfitData)
-    public OutfitData currentOutfit; // whichever outfit is currently equipped
+    public OutfitData baseHorseFit; 
+    public List<OutfitData> ownedOutfits = new List<OutfitData>(); 
+    public OutfitData currentOutfit; 
 
-    public InputAction switchOutfitAction; // temporary key to cycle through owned outfits, for testing before UI exists
-    public Transform outfitAttachPoint; // where the outfit model should be instantiated on the player
+    public InputAction switchOutfitAction; 
+    public Transform outfitAttachPoint; 
 
     private GameObject currentOutfitInstance;
 
@@ -30,13 +30,13 @@ public class OutfitManager : MonoBehaviour
     {
         switchOutfitAction.Enable();
 
-        // destroy whatever's sitting under the attach point in the editor (e.g. your placeholder Horse Model), so we start fresh at runtime
+        
         foreach (Transform child in outfitAttachPoint)
         {
             Destroy(child.gameObject);
         }
 
-        EquipOutfit(baseHorseFit); // start the game with no outfit equipped
+        EquipOutfit(baseHorseFit); 
     }
 
     void Update()
@@ -55,7 +55,7 @@ public class OutfitManager : MonoBehaviour
 
     public void EquipOutfit(OutfitData outfit)
     {
-        if (outfit != baseHorseFit && !ownedOutfits.Contains(outfit)) return; // safety check - can't equip an outfit you don't own (noOutfitData is always allowed)
+        if (outfit != baseHorseFit && !ownedOutfits.Contains(outfit)) return; 
 
         if (currentOutfitInstance != null)
         {
@@ -72,7 +72,7 @@ public class OutfitManager : MonoBehaviour
         Debug.Log("Now wearing: " + currentOutfit.outfitName);
     }
 
-    // Cycles through: No Outfit -> owned outfit 1 -> owned outfit 2 -> back to No Outfit
+    
     void CycleOutfit()
     {
         List<OutfitData> allStates = new List<OutfitData> { baseHorseFit };

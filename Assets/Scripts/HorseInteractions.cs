@@ -3,8 +3,8 @@ using UnityEngine.InputSystem;
 
 public class HorseInteraction : MonoBehaviour
 {
-    public InputAction interactAction; // input action (E key) used to check if player wants to interact
-    public InteractionRange interactionRange; // drag the InteractionRange child object in here
+    public InputAction interactAction; 
+    public InteractionRange interactionRange; 
 
     void Start()
     {
@@ -13,9 +13,11 @@ public class HorseInteraction : MonoBehaviour
 
     void Update()
     {
+        if (UIStateManager.Instance.isUIOpen) return;
+
         if (interactAction.WasPressedThisFrame())
         {
-            Debug.Log("E pressed. Current interactable: " + interactionRange.currentInteractable); // confirms key press is detected and shows what's currently in range
+            Debug.Log("E pressed. Current interactable: " + interactionRange.currentInteractable); 
 
             if (interactionRange.currentInteractable != null)
             {

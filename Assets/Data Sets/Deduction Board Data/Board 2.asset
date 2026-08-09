@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a157de1c5583737418b6ed7e10a477d0, type: 3}
+  m_Name: Board 2
+  m_EditorClassIdentifier: Assembly-CSharp::DeductionBoardData
+  boardName: Board 2
+  isUnlocked: 1
+  slots:
+  - correctClue: {fileID: 11400000, guid: 102bd97ef1922cd4691a5eb0bbab531a, type: 2}
+    placedClue: {fileID: 0}
+    uiPosition: {x: 1, y: 40}
+  - correctClue: {fileID: 11400000, guid: 9375dea7c3901a44fab8093f1de39b4a, type: 2}
+    placedClue: {fileID: 0}
+    uiPosition: {x: 100, y: 40}
+  - correctClue: {fileID: 11400000, guid: 75cca9a720eb0de4aa19abb41b4219a7, type: 2}
+    placedClue: {fileID: 0}
+    uiPosition: {x: 200, y: 40}
+  connections: []
+  boardsToUnlock: []

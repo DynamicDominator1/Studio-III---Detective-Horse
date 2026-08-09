@@ -1,9 +1,14 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 [System.Serializable]
 public class Dialogue
 {
-    public string optionText; // what the player is "asking" - shown as a choice
-    public ClueData requiredClue; // leave empty for an always-available option
-    public string npcResponse; // what the NPC says when this option is chosen
+    public string optionText;
+    public ClueData requiredClue;
+    public string npcResponse;
+    public DeductionBoardData boardToUnlockOn; 
+    public int connectionIndexToUnlock = -1; 
+    public List<Dialogue> followUpOptions;
+    public bool isGoodbye;
 }
