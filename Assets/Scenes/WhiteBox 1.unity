@@ -476,7 +476,7 @@ Transform:
   m_GameObject: {fileID: 29163041}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.859, z: 2.058}
+  m_LocalPosition: {x: 0, y: 0.859, z: 1.761}
   m_LocalScale: {x: 0.5129421, y: 0.5129421, z: 0.5129421}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1940,7 +1940,7 @@ MonoBehaviour:
     m_Flags: 0
   moveInput: {x: 0, y: 0}
   speed: 5
-  rotationSpeed: 1200
+  rotationSpeed: 10000
   gravity: -9.81
 --- !u!143 &202663343
 CharacterController:
@@ -1976,7 +1976,7 @@ Transform:
   m_GameObject: {fileID: 202663341}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0, z: 5.9}
+  m_LocalPosition: {x: 0, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
