@@ -5,5 +5,5 @@ public class ClueData : ScriptableObject
 {
     public string clueName;
     public string description;
-    public Sprite itemImage; 
+    public Sprite itemImage;
 }

@@ -9,6 +9,7 @@ public class HorseInteraction : MonoBehaviour
     void Start()
     {
         interactAction.Enable();
+
     }
 
     void Update()
@@ -17,11 +18,12 @@ public class HorseInteraction : MonoBehaviour
 
         if (interactAction.WasPressedThisFrame())
         {
-            Debug.Log("E pressed. Current interactable: " + interactionRange.currentInteractable); 
+            // Debug.Log("E pressed. Current interactable: " + interactionRange.currentInteractable); 
 
             if (interactionRange.currentInteractable != null)
             {
                 interactionRange.currentInteractable.Interact();
+
             }
         }
     }

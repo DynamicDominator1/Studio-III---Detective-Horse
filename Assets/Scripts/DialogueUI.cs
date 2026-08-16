@@ -7,7 +7,7 @@ public class DialogueUI : MonoBehaviour
 {
     public static DialogueUI Instance;
 
-    public GameObject dialoguePanel; // the whole Dialogue Tab panel
+    public GameObject dialoguePanel;
     public TextMeshProUGUI npcLineText;
     public Transform optionsContainer;
     public GameObject optionButtonPrefab;
@@ -38,6 +38,7 @@ public class DialogueUI : MonoBehaviour
         UpdateDialogue(line, options);
     }
 
+
     public void UpdateDialogue(string line, List<Dialogue> options)
     {
         npcLineText.text = line;
@@ -46,6 +47,7 @@ public class DialogueUI : MonoBehaviour
         {
             Destroy(child.gameObject);
         }
+
 
         foreach (Dialogue option in options)
         {
@@ -61,10 +63,12 @@ public class DialogueUI : MonoBehaviour
                 button.interactable = true;
                 button.onClick.AddListener(() => currentNPC.ChooseOption(option));
             }
+
             else
             {
                 label.text = "[MORE CLUES NEEDED]";
                 button.interactable = false;
+
             }
         }
     }
@@ -73,9 +77,11 @@ public class DialogueUI : MonoBehaviour
     {
         UIStateManager.Instance.ClosePanel(dialoguePanel);
         currentNPC = null;
+
     }
 
-    public void ShowDismissal(string npcName, string line)
+    // for wrong outfit
+    public void ShowDismissal(string line)
     {
         UIStateManager.Instance.OpenPanel(dialoguePanel);
         npcLineText.text = line;
@@ -91,5 +97,6 @@ public class DialogueUI : MonoBehaviour
 
         label.text = "Leave";
         button.onClick.AddListener(CloseDialogue);
+
     }
 }

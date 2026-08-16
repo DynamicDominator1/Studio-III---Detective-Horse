@@ -10,29 +10,30 @@ public class DedBoardUI : MonoBehaviour
     public GameObject cluePickerPanel;
     public Transform cluePickerGrid;
     public GameObject cluePickerButtonPrefab;
-    public GameObject boardPanel; 
-    public InputAction toggleBoardAction; 
+    public GameObject boardPanel;
+    public InputAction toggleBoardAction;
 
     private ClueSlot slotBeingEdited;
     private DedSlotUI slotUIBeingEdited;
 
-    public Transform boardListContainer; 
-    public GameObject boardListButtonPrefab; 
+    public Transform boardListContainer;
+    public GameObject boardListButtonPrefab;
 
     public Sprite idleBoardSprite;
     public Sprite selectedBoardSprite;
     public Sprite completedBoardSprite;
 
-    public GameObject stringLinePrefab; 
-    public Vector2 pinOffset = new Vector2(1.2f, 43.6f); 
+    public GameObject stringLinePrefab;
+    public Vector2 pinOffset = new Vector2(1.2f, 43.6f);
 
-    public GameObject connectionTooltip; 
-    public TextMeshProUGUI tooltipText; 
+    public GameObject connectionTooltip;
+    public TextMeshProUGUI tooltipText;
 
     void Start()
     {
         toggleBoardAction.Enable();
         boardPanel.SetActive(false);
+
         cluePickerPanel.SetActive(false);
     }
 
@@ -43,6 +44,7 @@ public class DedBoardUI : MonoBehaviour
             ToggleBoard();
         }
     }
+
 
     void ToggleBoard()
     {
@@ -57,6 +59,7 @@ public class DedBoardUI : MonoBehaviour
         else
         {
             UIStateManager.Instance.ClosePanel(boardPanel);
+
         }
     }
 
@@ -65,6 +68,7 @@ public class DedBoardUI : MonoBehaviour
         ConnectionLineUI.Init(connectionTooltip, tooltipText);
         connectionTooltip.SetActive(false);
 
+        
         foreach (Transform child in slotContainer)
         {
             Destroy(child.gameObject);
@@ -74,11 +78,13 @@ public class DedBoardUI : MonoBehaviour
 
         foreach (ClueSlot slot in board.slots)
         {
+            
             GameObject newSlotVisual = Instantiate(slotPrefab, slotContainer);
             newSlotVisual.GetComponent<RectTransform>().anchoredPosition = slot.uiPosition;
 
             DedSlotUI slotUI = newSlotVisual.GetComponent<DedSlotUI>();
             slotUI.Setup(slot, this);
+
         }
 
         foreach (ClueConnection connection in board.connections)
@@ -90,6 +96,7 @@ public class DedBoardUI : MonoBehaviour
         }
     }
 
+    // Stretches image between 2 points to act as string
     void DrawConnection(ClueSlot slotA, ClueSlot slotB, string reason)
     {
         GameObject line = Instantiate(stringLinePrefab, slotContainer);
@@ -108,6 +115,7 @@ public class DedBoardUI : MonoBehaviour
 
         ConnectionLineUI lineUI = line.GetComponent<ConnectionLineUI>();
         lineUI.Setup(reason);
+
     }
 
     public void OpenPicker(ClueSlot slot, DedSlotUI slotUI)
@@ -155,11 +163,13 @@ public class DedBoardUI : MonoBehaviour
 
         foreach (DeductionBoardData board in DeductionManager.Instance.allBoards)
         {
+            // locked boards just don't show up at all rather than being greyed out
             if (!board.isUnlocked) continue;
 
             GameObject buttonObj = Instantiate(boardListButtonPrefab, boardListContainer);
             TextMeshProUGUI label = buttonObj.GetComponentInChildren<TextMeshProUGUI>();
             Image background = buttonObj.GetComponent<Image>();
+
 
             if (board == current)
             {
@@ -178,19 +188,23 @@ public class DedBoardUI : MonoBehaviour
             }
 
             buttonObj.GetComponent<Button>().onClick.AddListener(() => SwitchToBoard(board));
+
         }
     }
 
     void SwitchToBoard(DeductionBoardData board)
     {
         DeductionManager.Instance.SetCurrentBoard(board);
+
         ShowBoard();
     }
 
     public void OpenFromNav()
     {
+
         UIStateManager.Instance.OpenPanel(boardPanel);
         ShowBoard();
         RefreshBoardList();
+
     }
 }

@@ -6,9 +6,10 @@ public class DeductionBoardData : ScriptableObject
 {
     public string boardName;
     public bool isUnlocked;
+
     public List<ClueSlot> slots;
     public List<ClueConnection> connections;
-    public List<DeductionBoardData> boardsToUnlock; 
+    public List<DeductionBoardData> boardsToUnlock; // which boards are unlocked after completeing this data set
 
     public bool IsBoardComplete()
     {

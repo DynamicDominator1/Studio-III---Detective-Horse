@@ -1,4 +1,4 @@
-using UnityEngine;
+ using UnityEngine;
 
 public class Clue : Interactable
 {
@@ -7,6 +7,6 @@ public class Clue : Interactable
     public override void Interact()
     {
         InventoryManager.Instance.AddClue(clueData); 
-        gameObject.SetActive(false); 
+        gameObject.SetActive(false); // hide picup
     }
 }

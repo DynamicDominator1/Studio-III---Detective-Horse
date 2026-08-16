@@ -3,9 +3,9 @@ using UnityEngine;
 [System.Serializable]
 public class ClueSlot
 {
-    public ClueData correctClue; 
-    public ClueData placedClue;
-    public Vector2 uiPosition;
+    public ClueData correctClue; // Correct Ded board Clue
+    public ClueData placedClue;  // places clue on Ded board
+    public Vector2 uiPosition;   // Clue slot Ded board position
 
     public bool IsCorrect()
     {

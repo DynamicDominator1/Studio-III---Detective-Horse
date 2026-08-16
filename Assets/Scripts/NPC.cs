@@ -6,8 +6,7 @@ public class NPC : Interactable
     public OutfitData requiredOutfit;
     public string wrongOutfitLine = "No Horses!";
     public string greeting = "Yes?";
-    public List<Dialogue> dialogueOptions; 
- 
+    public List<Dialogue> dialogueOptions;
 
     private List<Dialogue> currentOptions;
 
@@ -15,7 +14,7 @@ public class NPC : Interactable
     {
         if (OutfitManager.Instance.currentOutfit != requiredOutfit)
         {
-            DialogueUI.Instance.ShowDismissal(interactionName, wrongOutfitLine);
+            DialogueUI.Instance.ShowDismissal(wrongOutfitLine);
             return;
         }
 
@@ -34,20 +33,17 @@ public class NPC : Interactable
             return;
         }
 
+        // dialouge option unlocks string connector on ded board
         if (option.boardToUnlockOn != null && option.connectionIndexToUnlock >= 0)
         {
             ClueConnection connection = option.boardToUnlockOn.connections[option.connectionIndexToUnlock];
             DeductionManager.Instance.UnlockConnection(connection);
         }
 
-        if (option.followUpOptions != null && option.followUpOptions.Count > 0)
-        {
-            currentOptions = option.followUpOptions;
-        }
-        else
-        {
-            currentOptions = dialogueOptions; 
-        }
+        
+        currentOptions = (option.followUpOptions != null && option.followUpOptions.Count > 0)
+            ? option.followUpOptions
+            : dialogueOptions;
 
         DialogueUI.Instance.UpdateDialogue(option.npcResponse, currentOptions);
     }

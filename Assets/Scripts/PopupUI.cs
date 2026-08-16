@@ -10,7 +10,7 @@ public class PopupUI : MonoBehaviour
 
     void Start()
     {
-        gameObject.SetActive(false); // hidden by default
+        gameObject.SetActive(false); // default off
     }
 
     public void ShowClue(ClueData clue)

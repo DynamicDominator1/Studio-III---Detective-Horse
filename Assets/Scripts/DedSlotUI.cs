@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class DedSlotUI : MonoBehaviour
 {
-    public GameObject frame; 
+    public GameObject frame; // hidden until clue placed 
     public Image cluePhoto; 
     public Button pinButton; 
 
@@ -18,11 +18,13 @@ public class DedSlotUI : MonoBehaviour
         RefreshVisual();
 
         pinButton.onClick.AddListener(OnClicked);
+        
     }
 
     void OnClicked()
     {
         boardUI.OpenPicker(clueSlot, this);
+
     }
 
     public void RefreshVisual()
@@ -34,6 +36,7 @@ public class DedSlotUI : MonoBehaviour
             {
                 cluePhoto.sprite = clueSlot.placedClue.itemImage;
             }
+
         }
         else
         {

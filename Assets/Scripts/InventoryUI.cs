@@ -9,7 +9,7 @@ public class InventoryUI : MonoBehaviour
     public GameObject clueSlotPrefab;
     public GameObject inventoryPanel;
     public InputAction toggleInventoryAction;
-    public PopupUI popupUI; // drag your Popup object in here
+    public PopupUI popupUI;
 
     void Start()
     {

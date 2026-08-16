@@ -8,7 +8,7 @@ public class InventoryManager : MonoBehaviour
     public List<ClueData> collectedClues = new List<ClueData>();
     public int selectedClueIndex = 0; // which clue in the list is currently "selected"
 
-    public InputAction cycleClueAction; // temporary key to cycle through collected clues, for testing before UI exists
+    public InputAction cycleClueAction; 
 
     void Awake()
     {

@@ -5,6 +5,8 @@ using TMPro;
 public class ConnectionLineUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     private string contextReason;
+
+    
     private static GameObject tooltip;
     private static TextMeshProUGUI tooltipText;
 
