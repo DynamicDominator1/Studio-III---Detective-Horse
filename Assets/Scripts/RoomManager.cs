@@ -110,6 +110,9 @@ public class RoomManager : MonoBehaviour
         {
             case RoomEnum.WhiteBox1: return "WhiteBox 1";
             case RoomEnum.WhiteBox2: return "WhiteBox2";
+            case RoomEnum.StreetLevelONE: return "StreetLevelONE";
+            case RoomEnum.StreetLevelTWO: return "StreetLevelTWO";
+
             default:
                 Debug.LogError("No scene name mapped for " + room);
                 return null;

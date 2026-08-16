@@ -2,5 +2,7 @@
 public enum SpawnPointEnum
 {
     WhiteBox1Entrance,
-    WhiteBox2Entrance
+    WhiteBox2Entrance,
+    StreetLevelONEEntrance,
+    StreetLevelTWOEntrance
 }

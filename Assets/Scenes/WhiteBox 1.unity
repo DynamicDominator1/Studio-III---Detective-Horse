@@ -180,7 +180,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Clue
   interactionName: Clue
-  playerInRange: 0
   highlightMaterial: {fileID: 2100000, guid: 8ffa821da36c3dd41a832f465cf96a67, type: 2}
   clueData: {fileID: 11400000, guid: 102bd97ef1922cd4691a5eb0bbab531a, type: 2}
 --- !u!65 &46682380
@@ -610,7 +609,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Clue
   interactionName: Clue 5
-  playerInRange: 0
   highlightMaterial: {fileID: 2100000, guid: 8ffa821da36c3dd41a832f465cf96a67, type: 2}
   clueData: {fileID: 11400000, guid: e09b2b00fb5a2e84b8d89bda1ff70557, type: 2}
 --- !u!65 &309258036
@@ -700,7 +698,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 330312063}
-  - component: {fileID: 330312062}
+  - component: {fileID: 330312064}
   m_Layer: 0
   m_Name: Spawn Point
   m_TagString: Untagged
@@ -708,19 +706,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &330312062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330312061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: adb7c86525869bf4da86d3b4490320a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SpawnPoint
-  spawnPointEnum: 0
 --- !u!4 &330312063
 Transform:
   m_ObjectHideFlags: 0
@@ -737,6 +722,19 @@ Transform:
   - {fileID: 723850172}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &330312064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330312061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227052e0f3a93134b9e08a4d84680e4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnPoint
+  spawnPointEnum: 0
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1065,7 +1063,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Clue
   interactionName: Clue 4
-  playerInRange: 0
   highlightMaterial: {fileID: 2100000, guid: 8ffa821da36c3dd41a832f465cf96a67, type: 2}
   clueData: {fileID: 11400000, guid: 27cc9e52c539f364fa1aad5d3b18e4ff, type: 2}
 --- !u!65 &780020399
@@ -1222,7 +1219,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Clue
   interactionName: Clue 3
-  playerInRange: 0
   highlightMaterial: {fileID: 2100000, guid: 8ffa821da36c3dd41a832f465cf96a67, type: 2}
   clueData: {fileID: 11400000, guid: 75cca9a720eb0de4aa19abb41b4219a7, type: 2}
 --- !u!65 &904313108
@@ -1364,7 +1360,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPC
   interactionName: NPC
-  playerInRange: 0
   highlightMaterial: {fileID: 2100000, guid: 8ffa821da36c3dd41a832f465cf96a67, type: 2}
   requiredOutfit: {fileID: 11400000, guid: d3d71ae620e4bc348826178ef1014a04, type: 2}
   wrongOutfitLine: No Horses!
@@ -1554,7 +1549,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Clue
   interactionName: Clue 2
-  playerInRange: 0
   highlightMaterial: {fileID: 2100000, guid: 8ffa821da36c3dd41a832f465cf96a67, type: 2}
   clueData: {fileID: 11400000, guid: 9375dea7c3901a44fab8093f1de39b4a, type: 2}
 --- !u!65 &1251591618
@@ -1816,7 +1810,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Clue
   interactionName: Clue 6
-  playerInRange: 0
   highlightMaterial: {fileID: 2100000, guid: 8ffa821da36c3dd41a832f465cf96a67, type: 2}
   clueData: {fileID: 11400000, guid: 56e0e0a6aebf35347b8504602bb3d26d, type: 2}
 --- !u!65 &1576110338
@@ -2051,7 +2044,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Outfit
   interactionName: Outfit
-  playerInRange: 0
   highlightMaterial: {fileID: 2100000, guid: 8ffa821da36c3dd41a832f465cf96a67, type: 2}
   outfitData: {fileID: 11400000, guid: d3d71ae620e4bc348826178ef1014a04, type: 2}
 --- !u!1 &1735367310 stripped
@@ -2072,7 +2064,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Clue
   interactionName: Apple
-  playerInRange: 0
   highlightMaterial: {fileID: 2100000, guid: 8ffa821da36c3dd41a832f465cf96a67, type: 2}
   clueData: {fileID: 11400000, guid: bbb598f347d8dd04ca538d1b0997d6c0, type: 2}
 --- !u!54 &1735367313
@@ -2184,10 +2175,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
   interactionName: Trial Door 1
-  playerInRange: 0
   highlightMaterial: {fileID: 2100000, guid: 8ffa821da36c3dd41a832f465cf96a67, type: 2}
-  targetRoom: 1
-  targetSpawnPoint: 1
+  targetRoom: 2
+  targetSpawnPoint: 2
 --- !u!65 &1939416131
 BoxCollider:
   m_ObjectHideFlags: 0
