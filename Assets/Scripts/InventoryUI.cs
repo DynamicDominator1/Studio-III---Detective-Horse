@@ -5,38 +5,39 @@ using TMPro;
 
 public class InventoryUI : MonoBehaviour
 {
-    public Transform clueGrid;
-    public GameObject clueSlotPrefab;
+    public Transform clueGrid; // parent of clue slot visuals
+    public GameObject clueSlotPrefab; 
     public GameObject inventoryPanel;
-    public InputAction toggleInventoryAction;
+    public InputAction toggleInventoryAction; // open close input
     public PopupUI popupUI;
 
     void Start()
     {
-        toggleInventoryAction.Enable();
-        inventoryPanel.SetActive(false);
+        toggleInventoryAction.Enable(); // enable open close action
+        inventoryPanel.SetActive(false); // hide panel
     }
 
     void Update()
     {
-        if (toggleInventoryAction.WasPressedThisFrame())
+        // if toggleInventoryAction is pressed, open inventory UI
+        if (toggleInventoryAction.WasPressedThisFrame()) 
         {
-            ToggleInventory();
+            ToggleInventory(); 
         }
     }
 
     void ToggleInventory()
     {
-        bool isOpening = !inventoryPanel.activeSelf;
+        bool isOpening = !inventoryPanel.activeSelf; // open or close
 
         if (isOpening)
         {
-            UIStateManager.Instance.OpenPanel(inventoryPanel);
-            RefreshGrid();
+            UIStateManager.Instance.OpenPanel(inventoryPanel); // open
+            RefreshGrid(); // display correct clue data
         }
         else
         {
-            UIStateManager.Instance.ClosePanel(inventoryPanel);
+            UIStateManager.Instance.ClosePanel(inventoryPanel); // close
         }
     }
 
@@ -47,6 +48,7 @@ public class InventoryUI : MonoBehaviour
             Destroy(child.gameObject);
         }
 
+        // new clues show up first
         for (int i = InventoryManager.Instance.collectedClues.Count - 1; i >= 0; i--)
         {
             ClueData clue = InventoryManager.Instance.collectedClues[i];
@@ -58,15 +60,16 @@ public class InventoryUI : MonoBehaviour
             Image slotImage = newSlot.GetComponent<Image>();
             if (clue.itemImage != null)
             {
-                slotImage.sprite = clue.itemImage;
+                slotImage.sprite = clue.itemImage; // icon is clue image
             }
 
            
             Button button = newSlot.GetComponent<Button>();
-            button.onClick.AddListener(() => popupUI.ShowClue(clue));
+            button.onClick.AddListener(() => popupUI.ShowClue(clue)); // click opens popup
         }
     }
 
+    //open inventory from menu button
     public void OpenFromNav()
     {
         UIStateManager.Instance.OpenPanel(inventoryPanel);

@@ -7,6 +7,7 @@ public class ClueSlot
     public ClueData placedClue;  // places clue on Ded board
     public Vector2 uiPosition;   // Clue slot Ded board position
 
+   // checks if clue is correct
     public bool IsCorrect()
     {
         return placedClue != null && placedClue == correctClue;

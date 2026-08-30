@@ -4,20 +4,20 @@ using UnityEngine.UI;
 public class DedSlotUI : MonoBehaviour
 {
     public GameObject frame; // hidden until clue placed 
-    public Image cluePhoto; 
-    public Button pinButton; 
+    public Image cluePhoto;
+    public Button pinButton; // opens clue picker
 
-    private ClueSlot clueSlot;
-    private DedBoardUI boardUI;
+    private ClueSlot clueSlot; // clue data for clue slot
+    private DedBoardUI boardUI; 
 
     public void Setup(ClueSlot slot, DedBoardUI board)
     {
-        clueSlot = slot;
-        boardUI = board;
+        clueSlot = slot; // slot data stored
+        boardUI = board; // parent board stored
 
-        RefreshVisual();
+        RefreshVisual(); // show correct visuals
 
-        pinButton.onClick.AddListener(OnClicked);
+        pinButton.onClick.AddListener(OnClicked); // open picker when clicked
         
     }
 
@@ -29,18 +29,18 @@ public class DedSlotUI : MonoBehaviour
 
     public void RefreshVisual()
     {
-        if (clueSlot.placedClue != null)
+        if (clueSlot.placedClue != null) // if clue slot is not empty
         {
-            frame.SetActive(true);
+            frame.SetActive(true); // show frame
             if (clueSlot.placedClue.itemImage != null)
             {
-                cluePhoto.sprite = clueSlot.placedClue.itemImage;
+                cluePhoto.sprite = clueSlot.placedClue.itemImage; // update image
             }
 
         }
         else
         {
-            frame.SetActive(false);
+            frame.SetActive(false); // else hide frame
         }
     }
 }

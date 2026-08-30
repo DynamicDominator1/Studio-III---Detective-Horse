@@ -10,24 +10,24 @@ public class PopupUI : MonoBehaviour
 
     void Start()
     {
-        gameObject.SetActive(false); // default off
+        gameObject.SetActive(false); // starts hidden
     }
 
     public void ShowClue(ClueData clue)
     {
-        gameObject.SetActive(true);
+        gameObject.SetActive(true); // show popup
 
         if (clue.itemImage != null)
         {
-            popupImage.sprite = clue.itemImage;
+            popupImage.sprite = clue.itemImage; // set image 
         }
 
-        popupTitle.text = clue.clueName;
-        popupDescription.text = clue.description;
+        popupTitle.text = clue.clueName; // set title
+        popupDescription.text = clue.description; // set desc
     }
 
     public void Hide()
     {
-        gameObject.SetActive(false);
+        gameObject.SetActive(false); // close panel
     }
 }

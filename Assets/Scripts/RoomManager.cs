@@ -10,9 +10,9 @@ public class RoomManager : MonoBehaviour
   
     public RoomEnum startingRoom;
 
-    public Transform playerTransform;
+    public Transform playerTransform; // player object which is moved
 
-    private RoomEnum? currentRoom;
+    private RoomEnum? currentRoom; // currently loaded room
 
     void Awake()
     {
@@ -22,88 +22,89 @@ public class RoomManager : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject);
+            Destroy(gameObject); // only 1
         }
     }
 
     void Start()
     {
-        StartCoroutine(LoadInitialRoom());
+        StartCoroutine(LoadInitialRoom()); // load starting room upon play
     }
 
     
     private IEnumerator LoadInitialRoom()
     {
-        yield return LoadRoomAdditive(startingRoom);
-        PlacePlayerAtSpawnPoint(FindSpawnPointInLoadedScenes(GetDefaultSpawnPointForRoom(startingRoom)));
+        yield return LoadRoomAdditive(startingRoom); // additivly loads first scene
+        PlacePlayerAtSpawnPoint(FindSpawnPointInLoadedScenes(GetDefaultSpawnPointForRoom(startingRoom))); // place player object at spawn point
     }
 
-    
+    // used by doors to move the player to a new scene
     public void GoToRoom(RoomEnum targetRoom, SpawnPointEnum targetSpawnPoint)
     {
         StartCoroutine(TransitionToRoom(targetRoom, targetSpawnPoint));
     }
 
+    
     private IEnumerator TransitionToRoom(RoomEnum targetRoom, SpawnPointEnum targetSpawnPoint)
     {
         if (currentRoom.HasValue)
         {
-            yield return UnloadRoom(currentRoom.Value);
+            yield return UnloadRoom(currentRoom.Value); // wait for previous scene to unload
         }
 
-        yield return LoadRoomAdditive(targetRoom);
+        yield return LoadRoomAdditive(targetRoom); // load new scene
 
-        SpawnPoint spawnPoint = FindSpawnPointInLoadedScenes(targetSpawnPoint);
-        PlacePlayerAtSpawnPoint(spawnPoint);
+        SpawnPoint spawnPoint = FindSpawnPointInLoadedScenes(targetSpawnPoint); // find spawn
+        PlacePlayerAtSpawnPoint(spawnPoint); // place at spawn
     }
 
     private IEnumerator LoadRoomAdditive(RoomEnum room)
     {
-        string sceneName = GetSceneName(room);
-        yield return SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
+        string sceneName = GetSceneName(room); // get starting scene
+        yield return SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive); // additly load alongside starting scene
 
         
-        SceneManager.SetActiveScene(SceneManager.GetSceneByName(sceneName));
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName(sceneName)); // new room = active scene
         currentRoom = room;
     }
 
     private IEnumerator UnloadRoom(RoomEnum room)
     {
-        string sceneName = GetSceneName(room);
-        yield return SceneManager.UnloadSceneAsync(sceneName);
+        string sceneName = GetSceneName(room); // get scene 
+        yield return SceneManager.UnloadSceneAsync(sceneName); // unload scene
     }
 
     
     private SpawnPoint FindSpawnPointInLoadedScenes(SpawnPointEnum targetSpawnPoint)
     {
-        SpawnPoint[] allSpawnPoints = FindObjectsByType<SpawnPoint>(FindObjectsSortMode.None);
+        SpawnPoint[] allSpawnPoints = FindObjectsByType<SpawnPoint>(FindObjectsSortMode.None); // find every spawn point in scene
 
-        foreach (SpawnPoint spawnPoint in allSpawnPoints)
+        foreach (SpawnPoint spawnPoint in allSpawnPoints) // check each spawn
         {
-            if (spawnPoint.spawnPointEnum == targetSpawnPoint)
+            if (spawnPoint.spawnPointEnum == targetSpawnPoint) // find correct spawn 
             {
-                return spawnPoint;
+                return spawnPoint; // this is spawn point
             }
         }
 
         Debug.LogError("No SpawnPoint found matching " + targetSpawnPoint + ". Player was not moved.");
-        return null;
+        return null; // cant find spawn
     }
 
     private void PlacePlayerAtSpawnPoint(SpawnPoint spawnPoint)
     {
-        if (spawnPoint == null) return;
+        if (spawnPoint == null) return; // dont move player is no spawn
 
         
-        CharacterController controller = playerTransform.GetComponent<CharacterController>();
-        if (controller != null) controller.enabled = false;
+        CharacterController controller = playerTransform.GetComponent<CharacterController>(); // get player controller
+        if (controller != null) controller.enabled = false; // disable controller
 
-        playerTransform.SetPositionAndRotation(spawnPoint.transform.position, spawnPoint.transform.rotation);
+        playerTransform.SetPositionAndRotation(spawnPoint.transform.position, spawnPoint.transform.rotation); // move player to spawn point
 
-        if (controller != null) controller.enabled = true;
+        if (controller != null) controller.enabled = true; // enable character controller
     }
 
-   
+   // scene enum
     private string GetSceneName(RoomEnum room)
     {
         switch (room)
@@ -124,7 +125,7 @@ public class RoomManager : MonoBehaviour
     {
         switch (room)
         {
-            case RoomEnum.WhiteBox1: return SpawnPointEnum.WhiteBox1Entrance;
+            case RoomEnum.WhiteBox1: return SpawnPointEnum.WhiteBox1Entrance; // sets room default spawn point
             case RoomEnum.WhiteBox2: return SpawnPointEnum.WhiteBox2Entrance;
             default:
                 Debug.LogError("No default spawn point mapped for " + room);

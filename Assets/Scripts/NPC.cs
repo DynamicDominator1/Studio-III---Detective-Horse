@@ -3,41 +3,44 @@ using System.Collections.Generic;
 
 public class NPC : Interactable
 {
-    public OutfitData requiredOutfit;
+    public OutfitData requiredOutfit; // correct outfit to speak with NPC
     public string wrongOutfitLine = "No Horses!";
     public string greeting = "Yes?";
-    public List<Dialogue> dialogueOptions;
+    public List<Dialogue> dialogueOptions; // base dialogue options
 
-    private List<Dialogue> currentOptions;
+    private List<Dialogue> currentOptions; // dialogue optionbs being shown
 
     public override void Interact()
     {
-        if (OutfitManager.Instance.currentOutfit != requiredOutfit)
+        if (OutfitManager.Instance.currentOutfit != requiredOutfit) // wearing wrong outfit
         {
-            DialogueUI.Instance.ShowDismissal(wrongOutfitLine);
+            DialogueUI.Instance.ShowDismissal(wrongOutfitLine); // show wrong outfit line
             return;
         }
 
-        currentOptions = dialogueOptions;
-        DialogueUI.Instance.OpenDialogue(this, greeting, currentOptions);
+        currentOptions = dialogueOptions; // start with base options
+        DialogueUI.Instance.OpenDialogue(this, greeting, currentOptions); // start with greeting
     }
 
+    // called when player chooses dialogue option
     public void ChooseOption(Dialogue option)
     {
-        bool isUnlocked = option.requiredClue == null || InventoryManager.Instance.collectedClues.Contains(option.requiredClue);
+        bool isUnlocked = option.requiredClue == null || InventoryManager.Instance.collectedClues.Contains(option.requiredClue); //can player pick option based on unlocked data
         if (!isUnlocked) return;
 
+        // if option picked, UI closes
         if (option.isGoodbye)
         {
             DialogueUI.Instance.CloseDialogue();
             return;
         }
 
-        // dialouge option unlocks string connector on ded board
+        
+       // option unlocks connection
         if (option.boardToUnlockOn != null && option.connectionIndexToUnlock >= 0)
         {
             ClueConnection connection = option.boardToUnlockOn.connections[option.connectionIndexToUnlock];
-            DeductionManager.Instance.UnlockConnection(connection);
+            DeductionManager.Instance.UnlockConnection(connection); // sets connection active in ded board
         }
 
         
@@ -45,6 +48,6 @@ public class NPC : Interactable
             ? option.followUpOptions
             : dialogueOptions;
 
-        DialogueUI.Instance.UpdateDialogue(option.npcResponse, currentOptions);
+        DialogueUI.Instance.UpdateDialogue(option.npcResponse, currentOptions); // show response and next options
     }
 }

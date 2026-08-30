@@ -5,38 +5,38 @@ using System.Collections.Generic;
 public class OutfitManager : MonoBehaviour
 {
     public static OutfitManager Instance;
-    public OutfitData baseHorseFit; 
-    public List<OutfitData> ownedOutfits = new List<OutfitData>(); 
-    public OutfitData currentOutfit; 
+    public OutfitData baseHorseFit; // default outfit
+    public List<OutfitData> ownedOutfits = new List<OutfitData>();  // outfit inventory
+    public OutfitData currentOutfit;
 
-    public InputAction switchOutfitAction; 
-    public Transform outfitAttachPoint; 
+    public InputAction switchOutfitAction; // input to cycle through outfits (for testing)
+    public Transform outfitAttachPoint; // where to spawn each outfit player model
 
-    private GameObject currentOutfitInstance;
+    private GameObject currentOutfitInstance; // currently spawned outfit model
 
     void Awake()
     {
         if (Instance == null)
         {
-            Instance = this;
+            Instance = this; // set singleton outfit manager
         }
         else
         {
-            Destroy(gameObject);
+            Destroy(gameObject); // only 1
         }
     }
 
     void Start()
     {
-        switchOutfitAction.Enable();
+        switchOutfitAction.Enable(); // enable cycle  input 
 
         
-        foreach (Transform child in outfitAttachPoint)
+        foreach (Transform child in outfitAttachPoint) // clear model
         {
             Destroy(child.gameObject);
         }
 
-        EquipOutfit(baseHorseFit); 
+        EquipOutfit(baseHorseFit); // set base outfit
     }
 
     void Update()
@@ -49,24 +49,24 @@ public class OutfitManager : MonoBehaviour
 
     public void AddOutfit(OutfitData outfit)
     {
-        ownedOutfits.Add(outfit);
+        ownedOutfits.Add(outfit); // add fit to inventory
         Debug.Log("Picked up outfit: " + outfit.outfitName);
     }
 
     public void EquipOutfit(OutfitData outfit)
     {
-        if (outfit != baseHorseFit && !ownedOutfits.Contains(outfit)) return; 
+        if (outfit != baseHorseFit && !ownedOutfits.Contains(outfit)) return; // unowned outfits cannot be equipped
 
         if (currentOutfitInstance != null)
         {
-            Destroy(currentOutfitInstance);
+            Destroy(currentOutfitInstance); // remove current outfit
         }
 
-        currentOutfit = outfit;
+        currentOutfit = outfit; // update current outfit
 
         if (outfit.outfitModelPrefab != null)
         {
-            currentOutfitInstance = Instantiate(outfit.outfitModelPrefab, outfitAttachPoint.position, outfitAttachPoint.rotation, outfitAttachPoint);
+            currentOutfitInstance = Instantiate(outfit.outfitModelPrefab, outfitAttachPoint.position, outfitAttachPoint.rotation, outfitAttachPoint); // spawn outfit model at attach point
         }
 
         Debug.Log("Now wearing: " + currentOutfit.outfitName);

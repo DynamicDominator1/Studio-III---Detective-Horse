@@ -6,3 +6,5 @@ public enum RoomEnum
     StreetLevelONE,
     StreetLevelTWO
 }
+
+// all scenes the player can move between

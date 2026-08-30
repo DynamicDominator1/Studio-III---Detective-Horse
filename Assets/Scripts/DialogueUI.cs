@@ -12,7 +12,7 @@ public class DialogueUI : MonoBehaviour
     public Transform optionsContainer;
     public GameObject optionButtonPrefab;
 
-    private NPC currentNPC;
+    private NPC currentNPC; // npc being spoken to
 
     void Awake()
     {
@@ -22,36 +22,38 @@ public class DialogueUI : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject);
+            Destroy(gameObject); //Destroy duplicates
         }
     }
 
     void Start()
     {
-        dialoguePanel.SetActive(false);
+        dialoguePanel.SetActive(false); // panel hidden at start 
     }
 
     public void OpenDialogue(NPC npc, string line, List<Dialogue> options)
     {
-        currentNPC = npc;
-        UIStateManager.Instance.OpenPanel(dialoguePanel);
-        UpdateDialogue(line, options);
+        currentNPC = npc; 
+        UIStateManager.Instance.OpenPanel(dialoguePanel); // show UI
+        UpdateDialogue(line, options);  // populate with correct text
     }
 
 
     public void UpdateDialogue(string line, List<Dialogue> options)
     {
-        npcLineText.text = line;
+        npcLineText.text = line; // set npc current line
 
-        foreach (Transform child in optionsContainer)
+        // clear old player responses
+        foreach (Transform child in optionsContainer) 
         {
-            Destroy(child.gameObject);
+            Destroy(child.gameObject); // delete
         }
 
 
+        // each response gets a button
         foreach (Dialogue option in options)
         {
-            bool isUnlocked = option.requiredClue == null || InventoryManager.Instance.collectedClues.Contains(option.requiredClue);
+            bool isUnlocked = option.requiredClue == null || InventoryManager.Instance.collectedClues.Contains(option.requiredClue); // does the player have required unlocks for this
 
             GameObject buttonObj = Instantiate(optionButtonPrefab, optionsContainer);
             TextMeshProUGUI label = buttonObj.GetComponentInChildren<TextMeshProUGUI>();
@@ -61,10 +63,10 @@ public class DialogueUI : MonoBehaviour
             {
                 label.text = option.optionText;
                 button.interactable = true;
-                button.onClick.AddListener(() => currentNPC.ChooseOption(option));
+                button.onClick.AddListener(() => currentNPC.ChooseOption(option)); // updates npc depending on chosen dialouge
             }
 
-            else
+            else // else dont allow to interact
             {
                 label.text = "[MORE CLUES NEEDED]";
                 button.interactable = false;
@@ -75,7 +77,7 @@ public class DialogueUI : MonoBehaviour
 
     public void CloseDialogue()
     {
-        UIStateManager.Instance.ClosePanel(dialoguePanel);
+        UIStateManager.Instance.ClosePanel(dialoguePanel); // hide panel
         currentNPC = null;
 
     }

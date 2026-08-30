@@ -3,6 +3,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Outfit", menuName = "Detective Horse/Outfit")]
 public class OutfitData : ScriptableObject
 {
-    public string outfitName; 
-    public GameObject outfitModelPrefab; 
+    public string outfitName; // displayed name
+    public GameObject outfitModelPrefab; // player prefab to spawn when outfit equipped
 }

@@ -6,3 +6,5 @@ public enum SpawnPointEnum
     StreetLevelONEEntrance,
     StreetLevelTWOEntrance
 }
+
+// enum of all build spawns

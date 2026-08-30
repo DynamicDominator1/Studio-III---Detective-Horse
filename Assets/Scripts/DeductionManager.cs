@@ -12,26 +12,26 @@ public class DeductionManager : MonoBehaviour
     {
         if (Instance == null)
         {
-            Instance = this;
+            Instance = this; // set ded manager
         }
         else
         {
-            Destroy(gameObject);
+            Destroy(gameObject); // ensure only 1 ded manager
         }
 
 #if UNITY_EDITOR
-        ResetAllBoardsForTesting();
+        ResetAllBoardsForTesting(); // resets boards within editor for testing
 #endif
 
     }
 
-    // resets references within unity for deduction board before game compiles
+    // resets references in unity for ded board before game compiles
     void ResetAllBoardsForTesting()
     {
         for (int i = 0; i < allBoards.Count; i++)
         {
             DeductionBoardData board = allBoards[i];
-            board.isUnlocked = (i == 0);
+            board.isUnlocked = (i == 0); // game start with ded board 1 unlocked
 
             foreach (ClueSlot slot in board.slots)
             {
@@ -47,22 +47,22 @@ public class DeductionManager : MonoBehaviour
 
     public DeductionBoardData GetCurrentBoard()
     {
-        return allBoards[currentBoardIndex];
+        return allBoards[currentBoardIndex]; // current board
 
     }
 
     public void PlaceClue(ClueSlot slot, ClueData clue)
     {
-        slot.placedClue = clue;
+        slot.placedClue = clue; // assign clue to slot 
         Debug.Log("Placed " + clue.clueName + " in slot");
-        CheckCompletion();
+        CheckCompletion(); // check if board completed
     }
 
 
 
     public void UnlockConnection(ClueConnection connection)
     {
-        connection.isUnlocked = true;
+        connection.isUnlocked = true; // assign connection
         Debug.Log("Unlocked connection: " + connection.contextReason);
         CheckCompletion();
 
@@ -73,10 +73,12 @@ public class DeductionManager : MonoBehaviour
         
         DeductionBoardData current = GetCurrentBoard();
 
+        // ded board completion check
         if (current.IsBoardComplete())
         {
             Debug.Log(current.boardName + " Complete!");
 
+            // next board(s) unlocked
             foreach (DeductionBoardData board in current.boardsToUnlock)
             {
                 board.isUnlocked = true;
@@ -88,11 +90,11 @@ public class DeductionManager : MonoBehaviour
 
     public void SetCurrentBoard(DeductionBoardData board)
     {
-        int index = allBoards.IndexOf(board);
+        int index = allBoards.IndexOf(board); // find board index
 
-        if (index >= 0)
+        if (index >= 0) // if board exists
         {
-            currentBoardIndex = index;
+            currentBoardIndex = index; // change boards
         }
     }
 }

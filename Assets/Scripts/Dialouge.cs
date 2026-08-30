@@ -4,14 +4,14 @@ using System.Collections.Generic;
 [System.Serializable]
 public class Dialogue
 {
-    public string optionText;
-    public ClueData requiredClue;
+    public string optionText; // text shown on button
+    public ClueData requiredClue; // needed clue to unlock button
     public string npcResponse;
 
     
-    public DeductionBoardData boardToUnlockOn;
+    public DeductionBoardData boardToUnlockOn; 
     public int connectionIndexToUnlock = -1;
 
     public List<Dialogue> followUpOptions;
-    public bool isGoodbye;
+    public bool isGoodbye; // does picking option end interaction
 }

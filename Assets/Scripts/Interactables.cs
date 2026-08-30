@@ -2,29 +2,29 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
-    public string interactionName = "";
-    public Material highlightMaterial;
+    public string interactionName = ""; // interactable name
+    public Material highlightMaterial; // material to highlight object if bit can be interacted with
 
-    private Renderer objectRenderer;
-    private Material originalMaterial;
+    private Renderer objectRenderer; // object renderer used to swap mats
+    private Material originalMaterial; // base objects mat
 
     void Awake()
     {
-        objectRenderer = GetComponentInChildren<Renderer>();
+        objectRenderer = GetComponentInChildren<Renderer>(); // get renderer
 
         if (objectRenderer != null)
         {
-            originalMaterial = objectRenderer.material;
+            originalMaterial = objectRenderer.material; // remember base mat
         }
     }
 
     
     void Reset()
     {
-        GetComponent<Collider>().isTrigger = true;
-        Rigidbody rb = gameObject.AddComponent<Rigidbody>();
-        rb.isKinematic = true;
-        rb.useGravity = false;
+        GetComponent<Collider>().isTrigger = true; // give interactabe trigger collider
+        Rigidbody rb = gameObject.AddComponent<Rigidbody>(); // give interactble rigid body
+        rb.isKinematic = true; // set true
+        rb.useGravity = false; // set false
 
     }
 
@@ -33,6 +33,7 @@ public class Interactable : MonoBehaviour
         Debug.Log(interactionName + " interacted with");
     }
 
+    // highlight mat on off
     public void SetHighlight(bool state)
     {
         if (objectRenderer == null) return;
