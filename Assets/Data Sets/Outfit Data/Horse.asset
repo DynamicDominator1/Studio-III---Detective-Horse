@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Horse
   m_EditorClassIdentifier: Assembly-CSharp::OutfitData
   outfitName: Horse
-  outfitModelPrefab: {fileID: 3657990322276495385, guid: 9f502da7a94e15e4a809cca3758c2c3d, type: 3}
+  outfitModelPrefab: {fileID: 1916057891138589666, guid: 40d65ed66d34b564a9f077a735eaf73d, type: 3}
