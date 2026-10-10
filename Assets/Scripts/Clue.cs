@@ -1,12 +1,13 @@
- using UnityEngine;
+using UnityEngine;
 
 public class Clue : Interactable
 {
-    public ClueData clueData; // clue data
+    public ClueData clueData; 
 
     public override void Interact()
     {
-        InventoryManager.Instance.AddClue(clueData); // add clue data to inventory
-        gameObject.SetActive(false); // hide picup
+        InventoryManager.Instance.AddClue(clueData); 
+        NotificationUI.Instance.Show("Clue found: " + clueData.clueName, clueData.itemImage); 
+        gameObject.SetActive(false); 
     }
 }

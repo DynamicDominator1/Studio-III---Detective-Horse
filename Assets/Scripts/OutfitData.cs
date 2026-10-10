@@ -4,5 +4,6 @@ using UnityEngine;
 public class OutfitData : ScriptableObject
 {
     public string outfitName; // displayed name
+    public Sprite itemImage;
     public GameObject outfitModelPrefab; // player prefab to spawn when outfit equipped
 }

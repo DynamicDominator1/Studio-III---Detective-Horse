@@ -62,15 +62,22 @@ public class DeductionManager : MonoBehaviour
 
     public void UnlockConnection(ClueConnection connection)
     {
+        bool wasAlreadyUnlocked = connection.isUnlocked; 
         connection.isUnlocked = true; // assign connection
         Debug.Log("Unlocked connection: " + connection.contextReason);
+
+        if (!wasAlreadyUnlocked) 
+        {
+            NotificationUI.Instance.Show("New connection. Check your deduction board"); 
+        }
+
         CheckCompletion();
 
     }
 
     void CheckCompletion()
     {
-        
+
         DeductionBoardData current = GetCurrentBoard();
 
         // ded board completion check
