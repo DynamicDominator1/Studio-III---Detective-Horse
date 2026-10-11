@@ -78,22 +78,22 @@ MonoBehaviour:
     dimension: 1
   scanlineStrength:
     m_OverrideState: 1
-    m_Value: 0.218
+    m_Value: 0.351
   scanlineSize:
     m_OverrideState: 1
-    m_Value: 6
+    m_Value: 14
   scrollSpeed:
     m_OverrideState: 1
-    m_Value: 0.2
+    m_Value: 0.5
   pixelSize:
     m_OverrideState: 1
     m_Value: 3
   randomWear:
     m_OverrideState: 1
-    m_Value: 0.38
+    m_Value: 0.7
   aberrationStrength:
     m_OverrideState: 1
-    m_Value: 1.52
+    m_Value: 1.5
   useTracking:
     m_OverrideState: 0
     m_Value: 0
@@ -124,10 +124,10 @@ MonoBehaviour:
     m_Value: {r: 1, g: 1, b: 1, a: 0.5}
   brightness:
     m_OverrideState: 1
-    m_Value: 1.5
+    m_Value: 2.54
   contrast:
     m_OverrideState: 1
-    m_Value: 1.35
+    m_Value: 1.25
   enableInterlacing:
     m_OverrideState: 0
     m_Value: 0
