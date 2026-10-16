@@ -14,6 +14,10 @@ public class RoomManager : MonoBehaviour
 
     private RoomEnum? currentRoom; // currently loaded room
 
+    private bool isTransitioning; // NEW: true while a room change is in progress, stops a door firing twice mid-fade
+
+    public float blackHoldTime = 0.5f; //  time the screen stays black 
+
     void Awake()
     {
         if (Instance == null)
@@ -44,9 +48,15 @@ public class RoomManager : MonoBehaviour
         StartCoroutine(TransitionToRoom(targetRoom, targetSpawnPoint));
     }
 
-    
+
     private IEnumerator TransitionToRoom(RoomEnum targetRoom, SpawnPointEnum targetSpawnPoint)
     {
+        if (isTransitioning) yield break;
+        isTransitioning = true; // doors cant be used
+
+        yield return UIFade.Instance.FadeOut(); // fade to black
+
+
         if (currentRoom.HasValue)
         {
             yield return UnloadRoom(currentRoom.Value); // wait for previous scene to unload
@@ -56,6 +66,13 @@ public class RoomManager : MonoBehaviour
 
         SpawnPoint spawnPoint = FindSpawnPointInLoadedScenes(targetSpawnPoint); // find spawn
         PlacePlayerAtSpawnPoint(spawnPoint); // place at spawn
+
+        yield return null; // wait 1 frame
+
+        yield return new WaitForSecondsRealtime(UIFade.Instance.holdTime); // CHANGED: hold time now comes from the UIFade Inspector field
+
+        yield return UIFade.Instance.FadeIn(); // black to fade out
+        isTransitioning = false; // doors can be used again
     }
 
     private IEnumerator LoadRoomAdditive(RoomEnum room)
@@ -113,6 +130,7 @@ public class RoomManager : MonoBehaviour
             case RoomEnum.WhiteBox2: return "WhiteBox2";
             case RoomEnum.StreetLevelONE: return "StreetLevelONE";
             case RoomEnum.StreetLevelTWO: return "StreetLevelTWO";
+            case RoomEnum.Bar: return "Bar";
 
             default:
                 Debug.LogError("No scene name mapped for " + room);

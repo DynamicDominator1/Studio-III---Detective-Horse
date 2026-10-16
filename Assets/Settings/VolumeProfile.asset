@@ -27,10 +27,10 @@ MonoBehaviour:
     m_Value: 1
   distortionStrength:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.066
   distortionSmoothing:
     m_OverrideState: 1
-    m_Value: 0.003
+    m_Value: 0
   colorRampMode:
     m_OverrideState: 0
     m_Value: 0
@@ -71,20 +71,20 @@ MonoBehaviour:
     dimension: 1
   rgbStrength:
     m_OverrideState: 1
-    m_Value: 0.01
+    m_Value: 0.319
   scanlineTex:
     m_OverrideState: 1
     m_Value: {fileID: 2800000, guid: 7b5d79ca87223054fa2cb8ee041efb01, type: 3}
     dimension: 1
   scanlineStrength:
     m_OverrideState: 1
-    m_Value: 0.351
+    m_Value: 0.448
   scanlineSize:
     m_OverrideState: 1
-    m_Value: 14
+    m_Value: 7
   scrollSpeed:
     m_OverrideState: 1
-    m_Value: 0.5
+    m_Value: 1.4
   pixelSize:
     m_OverrideState: 1
     m_Value: 3

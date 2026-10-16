@@ -2,19 +2,19 @@ using UnityEngine;
 
 public class RoomCamera : MonoBehaviour
 {
-    public CameraSettings settings; // this room's camera settings, edited in the Inspector
+    public CameraSettings settings; 
 
     void Start()
     {
-        CameraFollow cam = FindFirstObjectByType<CameraFollow>(); // find the camera in the persistent scene
+        CameraFollow cam = FindFirstObjectByType<CameraFollow>(); 
 
-        if (cam != null) // only continue if the camera was actually found
+        if (cam != null) 
         {
-            cam.ApplySettings(settings); // hand the camera this room's settings, it jumps there instantly
+            cam.ApplySettings(settings); 
         }
         else
         {
-            Debug.LogWarning("RoomCamera could not find a CameraFollow in the loaded scenes"); // helps spot a missing camera while testing
+            Debug.LogWarning("RoomCamera could not find a CameraFollow in the loaded scenes"); 
         }
     }
 }

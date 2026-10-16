@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfaa8db2fb6404649aac8bbad838698e, type: 3}
-  m_Name: Apple Clue
+  m_Name: Wallet
   m_EditorClassIdentifier: Assembly-CSharp::ClueData
-  clueName: Apple
-  description: Granny smith
+  clueName: 
+  description: 
   itemImage: {fileID: 0}
