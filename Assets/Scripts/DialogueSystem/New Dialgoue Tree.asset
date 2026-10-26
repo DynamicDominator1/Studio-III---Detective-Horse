@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5361466601561701614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d1b5e4715c00f843a9cfc24f3444890, type: 3}
+  m_Name: NPC
+  m_EditorClassIdentifier: Assembly-CSharp::NPCNode
+  graph: {fileID: 11400000}
+  position: {x: -312, y: -152}
+  ports:
+    keys:
+    - exit
+    values:
+    - _fieldName: exit
+      _node: {fileID: -5361466601561701614}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: enter
+        node: {fileID: 3356883442997792713}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  exit: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec94ee08f47b0d1479a5473e3c037d96, type: 3}
+  m_Name: New Dialgoue Tree
+  m_EditorClassIdentifier: Assembly-CSharp::DialgoueTree
+  nodes:
+  - {fileID: -5361466601561701614}
+  - {fileID: 3356883442997792713}
+--- !u!114 &3356883442997792713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92523d48759e6ff4e8bbece063603480, type: 3}
+  m_Name: Player
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerNode
+  graph: {fileID: 11400000}
+  position: {x: 72, y: -8}
+  ports:
+    keys:
+    - enter
+    values:
+    - _fieldName: enter
+      _node: {fileID: 3356883442997792713}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: exit
+        node: {fileID: -5361466601561701614}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  jumpPower: 0
+  erquiredClue: {fileID: 11400000, guid: 102bd97ef1922cd4691a5eb0bbab531a, type: 2}
+  enter: 0
+  text: 

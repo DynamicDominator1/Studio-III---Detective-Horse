@@ -12,7 +12,7 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - _DITHERMODE_SCREEN
+  - _DITHERMODE_TEXTURE
   - _FILTERMODE_POINT
   - _LIGHTMODE_LIT
   - _RECEIVESHADOWSMODE_ON
@@ -99,7 +99,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints:
     - _ColorBitDepth: 32
-    - _DitherMode: 0
+    - _DitherMode: 1
     - _FilterMode: 1
     - _LightMode: 0
     - _ReceiveShadowsMode: 0
