@@ -14,7 +14,7 @@ public class RoomCamera : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("RoomCamera could not find a CameraFollow in the loaded scenes"); 
+            Debug.LogWarning("could not find camera"); 
         }
     }
 }

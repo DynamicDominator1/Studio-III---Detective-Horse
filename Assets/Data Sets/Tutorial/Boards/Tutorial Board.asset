@@ -12,18 +12,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a157de1c5583737418b6ed7e10a477d0, type: 3}
   m_Name: Tutorial Board
   m_EditorClassIdentifier: Assembly-CSharp::DeductionBoardData
-  boardName: 
-  isUnlocked: 0
+  boardName: Tutorial Mystery
+  isUnlocked: 1
   slots:
-  - correctClue: {fileID: 0}
+  - correctClue: {fileID: 11400000, guid: 2aee82a24b0bafa4d8475a5b3f52d659, type: 2}
     placedClue: {fileID: 0}
-    uiPosition: {x: 0, y: 0}
-  - correctClue: {fileID: 0}
+    uiPosition: {x: 184, y: -78}
+  - correctClue: {fileID: 11400000, guid: 8626aa6505ee5a247aea0e9a821c383b, type: 2}
     placedClue: {fileID: 0}
-    uiPosition: {x: 0, y: 0}
+    uiPosition: {x: 4, y: -1}
+  - correctClue: {fileID: 11400000, guid: 2c2cc1cc3d9956c4c844aac36e19cf07, type: 2}
+    placedClue: {fileID: 0}
+    uiPosition: {x: 334, y: -27}
+  - correctClue: {fileID: 11400000, guid: d31efbad471669043a2881d7d8bb08b8, type: 2}
+    placedClue: {fileID: 0}
+    uiPosition: {x: -263, y: -78}
+  - correctClue: {fileID: 11400000, guid: 686c50c4352192c4abdf28b17a602d29, type: 2}
+    placedClue: {fileID: 0}
+    uiPosition: {x: -18, y: 162}
+  - correctClue: {fileID: 11400000, guid: bbb598f347d8dd04ca538d1b0997d6c0, type: 2}
+    placedClue: {fileID: 0}
+    uiPosition: {x: -196, y: 114}
   connections:
-  - slotAIndex: 0
-    slotBIndex: 1
-    contextReason: 
-    isUnlocked: 0
+  - slotAIndex: 4
+    slotBIndex: 5
+    contextReason: Apple to Tyre
+    isUnlocked: 1
+  - slotAIndex: 5
+    slotBIndex: 3
+    contextReason: Window to Apple
+    isUnlocked: 1
+  - slotAIndex: 1
+    slotBIndex: 3
+    contextReason: Safe to Window
+    isUnlocked: 1
+  - slotAIndex: 1
+    slotBIndex: 0
+    contextReason: Safe to Wallet
+    isUnlocked: 1
+  - slotAIndex: 1
+    slotBIndex: 2
+    contextReason: Safe to Footprints
+    isUnlocked: 1
+  - slotAIndex: 2
+    slotBIndex: 0
+    contextReason: Footprints to Wallet
+    isUnlocked: 1
   boardsToUnlock: []

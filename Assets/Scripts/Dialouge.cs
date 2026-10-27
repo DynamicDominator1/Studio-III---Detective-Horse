@@ -6,11 +6,12 @@ public class Dialogue
 {
     public string optionText; // text shown on button
     public ClueData requiredClue; // needed clue to unlock button
+    public DeductionBoardData requiredBoard; // required completed ded board
     public string npcResponse;
 
 
     public DeductionBoardData boardToUnlockOn;
-    public int connectionIndexToUnlock = -1;
+    public List<int> connectionIndexesToUnlock;
 
     public DeductionBoardData boardToUnlock;
 

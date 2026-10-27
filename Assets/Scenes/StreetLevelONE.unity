@@ -386,7 +386,7 @@ Transform:
   m_GameObject: {fileID: 66870773}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -842, y: 103.0036, z: -2259}
+  m_LocalPosition: {x: -830, y: 103.0036, z: -2228}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1932,6 +1932,7 @@ GameObject:
   - component: {fileID: 520748920}
   - component: {fileID: 520748922}
   - component: {fileID: 520748921}
+  - component: {fileID: 520748923}
   m_Layer: 0
   m_Name: Sign_Road_Block (2)
   m_TagString: Untagged
@@ -2011,6 +2012,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 520748919}
   m_Mesh: {fileID: 7845647367930381702, guid: 0b44af6e66d8f564d9bdeac7f8bf264f, type: 3}
+--- !u!114 &520748923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520748919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22665a113677dd542bb60cdecc2f1360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WorldStateManager
 --- !u!1 &534296198
 GameObject:
   m_ObjectHideFlags: 0
@@ -2361,6 +2374,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1883370808eaf594b8c6292313a6ceca, type: 3}
       insertIndex: -1
       addedObject: {fileID: 608800184}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1883370808eaf594b8c6292313a6ceca, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 608800187}
   m_SourcePrefab: {fileID: 100100000, guid: 1883370808eaf594b8c6292313a6ceca, type: 3}
 --- !u!1 &608800183 stripped
 GameObject:
@@ -2430,6 +2446,18 @@ MonoBehaviour:
   interactionName: Sus Apple
   highlightMaterial: {fileID: 2100000, guid: a1763b5334d921b4b8813062817e1c21, type: 2}
   clueData: {fileID: 11400000, guid: bbb598f347d8dd04ca538d1b0997d6c0, type: 2}
+--- !u!114 &608800187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608800183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22665a113677dd542bb60cdecc2f1360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WorldStateManager
 --- !u!1 &654162557
 GameObject:
   m_ObjectHideFlags: 0
@@ -4692,9 +4720,10 @@ MonoBehaviour:
   dialogueOptions:
   - optionText: '*NEIGH*'
     requiredClue: {fileID: 0}
-    npcResponse: Oh detective! i didnt see you there. What can I help with?
+    requiredBoard: {fileID: 0}
+    npcResponse: Oh detective! I didnt see you there. What can I help with?
     boardToUnlockOn: {fileID: 0}
-    connectionIndexToUnlock: 0
+    connectionIndexesToUnlock: 
     boardToUnlock: {fileID: 0}
     clueToGive: {fileID: 0}
     outfitToGive: {fileID: 0}
@@ -4703,9 +4732,10 @@ MonoBehaviour:
     followUpOptions:
     - optionText: Can I get through?
       requiredClue: {fileID: 0}
+      requiredBoard: {fileID: 0}
       npcResponse: Sure! Let me just move these gates for you
       boardToUnlockOn: {fileID: 0}
-      connectionIndexToUnlock: 0
+      connectionIndexesToUnlock: 
       boardToUnlock: {fileID: 0}
       clueToGive: {fileID: 0}
       outfitToGive: {fileID: 0}
@@ -4717,22 +4747,24 @@ MonoBehaviour:
       followUpOptions:
       - optionText: Thanks
         requiredClue: {fileID: 0}
+        requiredBoard: {fileID: 0}
         npcResponse: 
         boardToUnlockOn: {fileID: 0}
-        connectionIndexToUnlock: 0
+        connectionIndexesToUnlock: 
         boardToUnlock: {fileID: 0}
         clueToGive: {fileID: 0}
         outfitToGive: {fileID: 0}
         itemGiven: 0
         objectsToRemove: []
         followUpOptions: []
-        isGoodbye: 1
+        isGoodbye: 0
       isGoodbye: 0
     - optionText: Whats Going on here?
       requiredClue: {fileID: 0}
+      requiredBoard: {fileID: 0}
       npcResponse: Just some Bar robbery. We're looking for *CLUES**
       boardToUnlockOn: {fileID: 11400000, guid: 561c32370b8fcd345b2c5c892f7d6762, type: 2}
-      connectionIndexToUnlock: 0
+      connectionIndexesToUnlock: 000000000100000002000000030000000400000005000000
       boardToUnlock: {fileID: 11400000, guid: 561c32370b8fcd345b2c5c892f7d6762, type: 2}
       clueToGive: {fileID: 0}
       outfitToGive: {fileID: 0}
@@ -4744,16 +4776,17 @@ MonoBehaviour:
       followUpOptions:
       - optionText: Thanks
         requiredClue: {fileID: 0}
+        requiredBoard: {fileID: 0}
         npcResponse: 
         boardToUnlockOn: {fileID: 0}
-        connectionIndexToUnlock: 0
+        connectionIndexesToUnlock: 
         boardToUnlock: {fileID: 0}
         clueToGive: {fileID: 0}
         outfitToGive: {fileID: 0}
         itemGiven: 0
         objectsToRemove: []
         followUpOptions: []
-        isGoodbye: 1
+        isGoodbye: 0
       isGoodbye: 0
     isGoodbye: 0
 --- !u!1 &984711298
@@ -4880,6 +4913,7 @@ GameObject:
   - component: {fileID: 1018537828}
   - component: {fileID: 1018537831}
   - component: {fileID: 1018537829}
+  - component: {fileID: 1018537832}
   m_Layer: 0
   m_Name: Cop Gate
   m_TagString: Untagged
@@ -4897,7 +4931,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.97, y: 3.27, z: 1.28}
-  m_LocalScale: {x: 9.464803, y: 6.911107, z: 14.206657}
+  m_LocalScale: {x: 9.464803, y: 6.911107, z: 16.94712}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2012628111}
@@ -4931,6 +4965,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1018537827}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1018537832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018537827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22665a113677dd542bb60cdecc2f1360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WorldStateManager
 --- !u!1 &1024957071
 GameObject:
   m_ObjectHideFlags: 0
@@ -6247,6 +6293,7 @@ GameObject:
   - component: {fileID: 1282873893}
   - component: {fileID: 1282873895}
   - component: {fileID: 1282873894}
+  - component: {fileID: 1282873896}
   m_Layer: 0
   m_Name: Sign_Road_Block (1)
   m_TagString: Untagged
@@ -6326,6 +6373,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1282873892}
   m_Mesh: {fileID: 7845647367930381702, guid: 0b44af6e66d8f564d9bdeac7f8bf264f, type: 3}
+--- !u!114 &1282873896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282873892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22665a113677dd542bb60cdecc2f1360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WorldStateManager
 --- !u!1 &1294872887
 GameObject:
   m_ObjectHideFlags: 0
@@ -7211,7 +7270,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: bea6cd9938cddf743961aeb7223e9f20, type: 2}
     - target: {fileID: 2354083263136822279, guid: 0b44af6e66d8f564d9bdeac7f8bf264f, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2435193850546439114, guid: 0b44af6e66d8f564d9bdeac7f8bf264f, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -7517,9 +7576,12 @@ PrefabInstance:
       addedObject: {fileID: 1437682412}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0b44af6e66d8f564d9bdeac7f8bf264f, type: 3}
       insertIndex: 16
-      addedObject: {fileID: 1202881530}
+      addedObject: {fileID: 2068454142}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0b44af6e66d8f564d9bdeac7f8bf264f, type: 3}
       insertIndex: 17
+      addedObject: {fileID: 1202881530}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0b44af6e66d8f564d9bdeac7f8bf264f, type: 3}
+      insertIndex: 18
       addedObject: {fileID: 66870774}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b44af6e66d8f564d9bdeac7f8bf264f, type: 3}
@@ -7827,7 +7889,7 @@ Transform:
   m_GameObject: {fileID: 1437682411}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -677, y: 103.0036, z: -2414}
+  m_LocalPosition: {x: -633, y: 103.0036, z: -2591}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11486,6 +11548,96 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 271156325596459975, guid: 936c9f231d4a38643b6146088363c0cf, type: 3}
+--- !u!1 &2068454141
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2068454142}
+  - component: {fileID: 2068454144}
+  - component: {fileID: 2068454143}
+  m_Layer: 0
+  m_Name: Traffic_Cone (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2068454142
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068454141}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -796, y: 103.0036, z: -2469}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1390360515}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &2068454143
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068454141}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: bea6cd9938cddf743961aeb7223e9f20, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &2068454144
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068454141}
+  m_Mesh: {fileID: 8713523918291362138, guid: 0b44af6e66d8f564d9bdeac7f8bf264f, type: 3}
 --- !u!1 &2074938752
 GameObject:
   m_ObjectHideFlags: 0

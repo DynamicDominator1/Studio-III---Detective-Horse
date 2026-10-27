@@ -104,7 +104,7 @@ public class RoomManager : MonoBehaviour
             }
         }
 
-        Debug.LogError("No SpawnPoint found matching " + targetSpawnPoint + ". Player was not moved.");
+        Debug.LogError("No SpawnPoint found at " + targetSpawnPoint + ". Player was not moved.");
         return null; // cant find spawn
     }
 

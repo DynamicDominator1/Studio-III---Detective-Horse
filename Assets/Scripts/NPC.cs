@@ -38,10 +38,16 @@ public class NPC : Interactable
 
 
         // option unlocks connection
-        if (option.boardToUnlockOn != null && option.connectionIndexToUnlock >= 0)
+        if (option.boardToUnlockOn != null && option.connectionIndexesToUnlock != null) 
         {
-            ClueConnection connection = option.boardToUnlockOn.connections[option.connectionIndexToUnlock];
-            DeductionManager.Instance.UnlockConnection(connection); // sets connection active in ded board
+            foreach (int index in option.connectionIndexesToUnlock) 
+            {
+                if (index >= 0 && index < option.boardToUnlockOn.connections.Count) 
+                {
+                    ClueConnection connection = option.boardToUnlockOn.connections[index]; 
+                    DeductionManager.Instance.UnlockConnection(connection); // sets connection active in ded board
+                }
+            }
         }
 
         if (option.boardToUnlock != null)
@@ -50,22 +56,22 @@ public class NPC : Interactable
 
         }
 
-        if (!option.itemGiven) // only hand items over the first time this option is picked
+       
+        
+            if (option.clueToGive != null && !InventoryManager.Instance.collectedClues.Contains(option.clueToGive)) // this option gives a clue
         {
-            if (option.clueToGive != null) // this option gives a clue
-            {
                 InventoryManager.Instance.AddClue(option.clueToGive); // add the clue to the inventory, same call the clue pickup uses
                 NotificationUI.Instance.Show("Clue found: " + option.clueToGive.clueName, option.clueToGive.itemImage); // popup with the clue's name and artwork
             }
 
-            if (option.outfitToGive != null) // this option gives an outfit
-            {
+            if (option.outfitToGive != null && !OutfitManager.Instance.ownedOutfits.Contains(option.outfitToGive)) // this option gives an outfit
+        {
                 OutfitManager.Instance.AddOutfit(option.outfitToGive); // add the outfit to the players outfit inventory, same call the outfit pickup uses
                 NotificationUI.Instance.Show("Outfit found: " + option.outfitToGive.outfitName, option.outfitToGive.itemImage); // popup with the outfit's name and artwork
             }
 
-            option.itemGiven = true; // mark as given so picking the option again gives nothing
-        }
+          
+       
 
         if (option.objectsToRemove != null)
         {
@@ -73,7 +79,7 @@ public class NPC : Interactable
             {
                 if (obj != null) 
                 {
-                    obj.SetActive(false); //switch object off
+                    WorldStateManager.Remove(obj); //switch object off forever
                 }
             }
         }

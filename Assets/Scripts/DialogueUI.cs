@@ -53,7 +53,9 @@ public class DialogueUI : MonoBehaviour
         // each response gets a button
         foreach (Dialogue option in options)
         {
-            bool isUnlocked = option.requiredClue == null || InventoryManager.Instance.collectedClues.Contains(option.requiredClue); // does the player have required unlocks for this
+            bool hasClue = option.requiredClue == null || InventoryManager.Instance.collectedClues.Contains(option.requiredClue); 
+            bool hasBoard = option.requiredBoard == null || option.requiredBoard.IsBoardComplete(); 
+            bool isUnlocked = hasClue && hasBoard;
 
             GameObject buttonObj = Instantiate(optionButtonPrefab, optionsContainer);
             TextMeshProUGUI label = buttonObj.GetComponentInChildren<TextMeshProUGUI>();
