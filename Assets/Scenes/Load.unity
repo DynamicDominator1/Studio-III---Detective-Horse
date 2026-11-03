@@ -7532,8 +7532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeductionManager
   allBoards:
-  - {fileID: 11400000, guid: 14929345f24d7104c8e584c54b4b1818, type: 2}
-  - {fileID: 11400000, guid: 223ba55171e241d4699e16dc13e68552, type: 2}
+  - {fileID: 11400000, guid: 561c32370b8fcd345b2c5c892f7d6762, type: 2}
 --- !u!114 &1385959089
 MonoBehaviour:
   m_ObjectHideFlags: 0

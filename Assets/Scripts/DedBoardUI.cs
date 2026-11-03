@@ -6,14 +6,14 @@ using TMPro;
 public class DedBoardUI : MonoBehaviour
 {
     public Transform slotContainer; // clue slot visuals
-    public GameObject slotPrefab;  
-    public GameObject cluePickerPanel; 
+    public GameObject slotPrefab;
+    public GameObject cluePickerPanel;
     public Transform cluePickerGrid; // parent with buttons
-    public GameObject cluePickerButtonPrefab; 
+    public GameObject cluePickerButtonPrefab;
     public GameObject boardPanel;
     public InputAction toggleBoardAction; // open close input
 
-    private ClueSlot slotBeingEdited; 
+    private ClueSlot slotBeingEdited;
     private DedSlotUI slotUIBeingEdited;
 
     public Transform boardListContainer;
@@ -45,10 +45,26 @@ public class DedBoardUI : MonoBehaviour
         }
     }
 
+    
+    bool HasAnyUnlockedBoard()
+    {
+        foreach (DeductionBoardData board in DeductionManager.Instance.allBoards) // check each board
+        {
+            if (board.isUnlocked) return true; // return true if any board is unlocked
+        }
+
+        return false; // return false if the player has no deduction boards
+    }
 
     void ToggleBoard()
     {
         bool isOpening = !boardPanel.activeSelf; // figures out if board is opening or closing
+
+        // if no board has been unlocked then do nothing
+        if (isOpening && !HasAnyUnlockedBoard()) 
+        {
+            return;
+        }
 
         if (isOpening)
         {
@@ -68,7 +84,7 @@ public class DedBoardUI : MonoBehaviour
         ConnectionLineUI.Init(connectionTooltip, tooltipText); // gives context box / text
         connectionTooltip.SetActive(false); // hide context
 
-        
+
         // clear previous visuals
         foreach (Transform child in slotContainer)
         {
@@ -80,7 +96,7 @@ public class DedBoardUI : MonoBehaviour
         // spawn slot for each clue
         foreach (ClueSlot slot in board.slots)
         {
-            
+
             GameObject newSlotVisual = Instantiate(slotPrefab, slotContainer);
             newSlotVisual.GetComponent<RectTransform>().anchoredPosition = slot.uiPosition; // set pos
 
@@ -116,7 +132,7 @@ public class DedBoardUI : MonoBehaviour
         lineRect.sizeDelta = new Vector2(distance, lineRect.sizeDelta.y); // set size
         lineRect.rotation = Quaternion.Euler(0, 0, angle); // set rotation
 
-        ConnectionLineUI lineUI = line.GetComponent<ConnectionLineUI>(); 
+        ConnectionLineUI lineUI = line.GetComponent<ConnectionLineUI>();
         lineUI.Setup(reason); // line gets contect text
 
     }
@@ -142,7 +158,7 @@ public class DedBoardUI : MonoBehaviour
 
         foreach (ClueData clue in InventoryManager.Instance.collectedClues) // each inventory clue gets a button
         {
-            GameObject button = Instantiate(cluePickerButtonPrefab, cluePickerGrid); 
+            GameObject button = Instantiate(cluePickerButtonPrefab, cluePickerGrid);
             button.GetComponentInChildren<TextMeshProUGUI>().text = clue.clueName;
             button.GetComponent<Button>().onClick.AddListener(() => SelectClue(clue)); // picks clue
         }
@@ -154,7 +170,7 @@ public class DedBoardUI : MonoBehaviour
         slotUIBeingEdited.RefreshVisual(); // update visuals to be correct
         cluePickerPanel.SetActive(false); // hide panel
 
-        RefreshBoardList(); 
+        RefreshBoardList();
     }
 
     public void RefreshBoardList()
@@ -184,7 +200,7 @@ public class DedBoardUI : MonoBehaviour
             }
             else if (board.IsBoardComplete()) // check off completed boards
             {
-                label.text = board.boardName; 
+                label.text = board.boardName;
                 background.sprite = completedBoardSprite;
             }
             else // show unfinished boards
@@ -207,6 +223,7 @@ public class DedBoardUI : MonoBehaviour
 
     public void OpenFromNav()
     {
+        if (!HasAnyUnlockedBoard()) return; // cancel if no board unlocked yet
 
         UIStateManager.Instance.OpenPanel(boardPanel);
         ShowBoard();

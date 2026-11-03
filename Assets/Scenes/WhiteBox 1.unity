@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 46682380}
   - component: {fileID: 46682379}
   - component: {fileID: 46682378}
+  - component: {fileID: 46682384}
   m_Layer: 0
   m_Name: Clue Trial
   m_TagString: Untagged
@@ -275,6 +276,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2146213346}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &46682384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46682377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22665a113677dd542bb60cdecc2f1360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WorldStateManager
 --- !u!1 &49465843
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,6 +560,7 @@ GameObject:
   - component: {fileID: 309258036}
   - component: {fileID: 309258035}
   - component: {fileID: 309258034}
+  - component: {fileID: 309258039}
   m_Layer: 0
   m_Name: Clue Trial (4)
   m_TagString: Untagged
@@ -689,6 +703,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 309258032}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &309258039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309258032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22665a113677dd542bb60cdecc2f1360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WorldStateManager
 --- !u!1 &330312061
 GameObject:
   m_ObjectHideFlags: 0
@@ -1001,6 +1027,7 @@ GameObject:
   - component: {fileID: 780020399}
   - component: {fileID: 780020398}
   - component: {fileID: 780020397}
+  - component: {fileID: 780020402}
   m_Layer: 0
   m_Name: Clue Trial (3)
   m_TagString: Untagged
@@ -1143,6 +1170,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 780020395}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &780020402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780020395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22665a113677dd542bb60cdecc2f1360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WorldStateManager
 --- !u!1 &904313104
 GameObject:
   m_ObjectHideFlags: 0
@@ -1157,6 +1196,7 @@ GameObject:
   - component: {fileID: 904313108}
   - component: {fileID: 904313107}
   - component: {fileID: 904313106}
+  - component: {fileID: 904313111}
   m_Layer: 0
   m_Name: Clue Trial (2)
   m_TagString: Untagged
@@ -1299,6 +1339,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 904313104}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &904313111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 904313104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22665a113677dd542bb60cdecc2f1360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WorldStateManager
 --- !u!1 &992478505
 GameObject:
   m_ObjectHideFlags: 0
@@ -1361,36 +1413,61 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPC
   interactionName: NPC
   highlightMaterial: {fileID: 2100000, guid: 8ffa821da36c3dd41a832f465cf96a67, type: 2}
+  ignoreOutfit: 0
   requiredOutfit: {fileID: 11400000, guid: d3d71ae620e4bc348826178ef1014a04, type: 2}
   wrongOutfitLine: No Horses!
   greeting: Yes? what do you need?
   dialogueOptions:
   - optionText: Trial Question
     requiredClue: {fileID: 0}
+    requiredBoard: {fileID: 0}
     npcResponse: Trial answer
     boardToUnlockOn: {fileID: 0}
-    connectionIndexToUnlock: -1
+    connectionIndexesToUnlock: 
+    boardToUnlock: {fileID: 0}
+    clueToGive: {fileID: 0}
+    outfitToGive: {fileID: 0}
+    itemGiven: 0
+    objectsToRemove: []
     followUpOptions:
     - optionText: Trial Follow up question
       requiredClue: {fileID: 0}
+      requiredBoard: {fileID: 0}
       npcResponse: Trial Follow up answer
       boardToUnlockOn: {fileID: 0}
-      connectionIndexToUnlock: -1
+      connectionIndexesToUnlock: 
+      boardToUnlock: {fileID: 0}
+      clueToGive: {fileID: 0}
+      outfitToGive: {fileID: 0}
+      itemGiven: 0
+      objectsToRemove: []
       followUpOptions: []
       isGoodbye: 0
     isGoodbye: 0
   - optionText: Trial Clue Question
     requiredClue: {fileID: 11400000, guid: 102bd97ef1922cd4691a5eb0bbab531a, type: 2}
+    requiredBoard: {fileID: 0}
     npcResponse: Trial Clue answer
     boardToUnlockOn: {fileID: 11400000, guid: 14929345f24d7104c8e584c54b4b1818, type: 2}
-    connectionIndexToUnlock: 0
+    connectionIndexesToUnlock: 
+    boardToUnlock: {fileID: 0}
+    clueToGive: {fileID: 0}
+    outfitToGive: {fileID: 0}
+    itemGiven: 0
+    objectsToRemove: []
     followUpOptions: []
     isGoodbye: 0
   - optionText: GOODBYE
     requiredClue: {fileID: 0}
+    requiredBoard: {fileID: 0}
     npcResponse: bye
     boardToUnlockOn: {fileID: 0}
-    connectionIndexToUnlock: -1
+    connectionIndexesToUnlock: 
+    boardToUnlock: {fileID: 0}
+    clueToGive: {fileID: 0}
+    outfitToGive: {fileID: 0}
+    itemGiven: 0
+    objectsToRemove: []
     followUpOptions: []
     isGoodbye: 1
 --- !u!136 &992478508
@@ -1502,6 +1579,7 @@ GameObject:
   - component: {fileID: 1251591618}
   - component: {fileID: 1251591617}
   - component: {fileID: 1251591616}
+  - component: {fileID: 1251591622}
   m_Layer: 0
   m_Name: Clue Trial (1)
   m_TagString: Untagged
@@ -1644,6 +1722,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2146213346}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1251591622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1251591615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22665a113677dd542bb60cdecc2f1360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WorldStateManager
 --- !u!1001 &1483863485
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1733,6 +1823,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1883370808eaf594b8c6292313a6ceca, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1735367313}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1883370808eaf594b8c6292313a6ceca, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1735367315}
   m_SourcePrefab: {fileID: 100100000, guid: 1883370808eaf594b8c6292313a6ceca, type: 3}
 --- !u!1 &1576110334
 GameObject:
@@ -1748,6 +1841,7 @@ GameObject:
   - component: {fileID: 1576110338}
   - component: {fileID: 1576110337}
   - component: {fileID: 1576110336}
+  - component: {fileID: 1576110341}
   m_Layer: 0
   m_Name: Clue Trial (5)
   m_TagString: Untagged
@@ -1890,6 +1984,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1576110334}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1576110341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576110334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22665a113677dd542bb60cdecc2f1360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WorldStateManager
 --- !u!1 &1658838901
 GameObject:
   m_ObjectHideFlags: 0
@@ -1904,6 +2010,7 @@ GameObject:
   - component: {fileID: 1658838902}
   - component: {fileID: 1658838907}
   - component: {fileID: 1658838906}
+  - component: {fileID: 1658838908}
   m_Layer: 0
   m_Name: Outfit
   m_TagString: Untagged
@@ -2046,6 +2153,18 @@ MonoBehaviour:
   interactionName: Outfit
   highlightMaterial: {fileID: 2100000, guid: 8ffa821da36c3dd41a832f465cf96a67, type: 2}
   outfitData: {fileID: 11400000, guid: d3d71ae620e4bc348826178ef1014a04, type: 2}
+--- !u!114 &1658838908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658838901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22665a113677dd542bb60cdecc2f1360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WorldStateManager
 --- !u!1 &1735367310 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1883370808eaf594b8c6292313a6ceca, type: 3}
@@ -2114,6 +2233,18 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.02
   m_Center: {x: -0.01, y: 0.01, z: 0}
+--- !u!114 &1735367315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735367310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22665a113677dd542bb60cdecc2f1360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WorldStateManager
 --- !u!1 &1939416128
 GameObject:
   m_ObjectHideFlags: 0
@@ -2176,8 +2307,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Door
   interactionName: Trial Door 1
   highlightMaterial: {fileID: 2100000, guid: 8ffa821da36c3dd41a832f465cf96a67, type: 2}
-  targetRoom: 2
-  targetSpawnPoint: 2
+  targetRoom: 3
+  targetSpawnPoint: 6
 --- !u!65 &1939416131
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2424,6 +2555,119 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1001 &1874012887539264983
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 212854396644743077, guid: 18ce10743762c1341ab6784fb01b8a93, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 119ded00dadd16b4d8b9a134f2697629, type: 2}
+    - target: {fileID: 323130753444112280, guid: 18ce10743762c1341ab6784fb01b8a93, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 119ded00dadd16b4d8b9a134f2697629, type: 2}
+    - target: {fileID: 487312551141728380, guid: 18ce10743762c1341ab6784fb01b8a93, type: 3}
+      propertyPath: m_Name
+      value: Tyre
+      objectReference: {fileID: 0}
+    - target: {fileID: 1745234116291372463, guid: 18ce10743762c1341ab6784fb01b8a93, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 119ded00dadd16b4d8b9a134f2697629, type: 2}
+    - target: {fileID: 3170591293753770702, guid: 18ce10743762c1341ab6784fb01b8a93, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 119ded00dadd16b4d8b9a134f2697629, type: 2}
+    - target: {fileID: 3339556641161840441, guid: 18ce10743762c1341ab6784fb01b8a93, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 119ded00dadd16b4d8b9a134f2697629, type: 2}
+    - target: {fileID: 3998642373290747476, guid: 18ce10743762c1341ab6784fb01b8a93, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 119ded00dadd16b4d8b9a134f2697629, type: 2}
+    - target: {fileID: 4018291087922420151, guid: 18ce10743762c1341ab6784fb01b8a93, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 119ded00dadd16b4d8b9a134f2697629, type: 2}
+    - target: {fileID: 4136472246068463317, guid: 18ce10743762c1341ab6784fb01b8a93, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 119ded00dadd16b4d8b9a134f2697629, type: 2}
+    - target: {fileID: 5361878846153790105, guid: 18ce10743762c1341ab6784fb01b8a93, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 119ded00dadd16b4d8b9a134f2697629, type: 2}
+    - target: {fileID: 5902811658210437526, guid: 18ce10743762c1341ab6784fb01b8a93, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 119ded00dadd16b4d8b9a134f2697629, type: 2}
+    - target: {fileID: 6428341524986218059, guid: 18ce10743762c1341ab6784fb01b8a93, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 119ded00dadd16b4d8b9a134f2697629, type: 2}
+    - target: {fileID: 6450914802018232925, guid: 18ce10743762c1341ab6784fb01b8a93, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 119ded00dadd16b4d8b9a134f2697629, type: 2}
+    - target: {fileID: 6474202505516603590, guid: 18ce10743762c1341ab6784fb01b8a93, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 119ded00dadd16b4d8b9a134f2697629, type: 2}
+    - target: {fileID: 7302407708377015030, guid: 18ce10743762c1341ab6784fb01b8a93, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.99448
+      objectReference: {fileID: 0}
+    - target: {fileID: 7302407708377015030, guid: 18ce10743762c1341ab6784fb01b8a93, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7302407708377015030, guid: 18ce10743762c1341ab6784fb01b8a93, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.04603
+      objectReference: {fileID: 0}
+    - target: {fileID: 7302407708377015030, guid: 18ce10743762c1341ab6784fb01b8a93, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7302407708377015030, guid: 18ce10743762c1341ab6784fb01b8a93, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7302407708377015030, guid: 18ce10743762c1341ab6784fb01b8a93, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7302407708377015030, guid: 18ce10743762c1341ab6784fb01b8a93, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7302407708377015030, guid: 18ce10743762c1341ab6784fb01b8a93, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7302407708377015030, guid: 18ce10743762c1341ab6784fb01b8a93, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7302407708377015030, guid: 18ce10743762c1341ab6784fb01b8a93, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8783563340122803024, guid: 18ce10743762c1341ab6784fb01b8a93, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 119ded00dadd16b4d8b9a134f2697629, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 18ce10743762c1341ab6784fb01b8a93, type: 3}
 --- !u!1 &3983275916755527095
 GameObject:
   m_ObjectHideFlags: 0
@@ -2590,3 +2834,4 @@ SceneRoots:
   - {fileID: 7427356687153113212}
   - {fileID: 330312063}
   - {fileID: 1939416134}
+  - {fileID: 1874012887539264983}

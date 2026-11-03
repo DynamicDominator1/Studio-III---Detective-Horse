@@ -31,7 +31,7 @@ public class DeductionManager : MonoBehaviour
         for (int i = 0; i < allBoards.Count; i++)
         {
             DeductionBoardData board = allBoards[i];
-            board.isUnlocked = (i == 0); // game start with ded board 1 unlocked
+            board.isUnlocked = false;
 
             foreach (ClueSlot slot in board.slots)
             {

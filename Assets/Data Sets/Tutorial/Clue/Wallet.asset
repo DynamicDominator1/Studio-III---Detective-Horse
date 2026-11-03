@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfaa8db2fb6404649aac8bbad838698e, type: 3}
   m_Name: Wallet
   m_EditorClassIdentifier: Assembly-CSharp::ClueData
-  clueName: 
-  description: 
+  clueName: Dropped wallet
+  description: a wallet with an ID inside of it
   itemImage: {fileID: 0}

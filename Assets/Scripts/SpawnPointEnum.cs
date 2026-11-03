@@ -6,7 +6,8 @@ public enum SpawnPointEnum
     StreetLevelONEEntrance,
     StreetLevelTWOEntrance,
     BarLevelFrontDoor,
-    StreetLevelBarEntry
+    StreetLevelBarEntry,
+    DetStreetSTART,
 }
 
 // enum of all build spawns
