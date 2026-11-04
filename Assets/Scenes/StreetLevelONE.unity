@@ -6221,7 +6221,20 @@ MonoBehaviour:
     outfitToGive: {fileID: 0}
     itemGiven: 0
     objectsToRemove: []
-    followUpOptions: []
+    followUpOptions:
+    - optionText: 
+      requiredClue: {fileID: 0}
+      requiredBoard: {fileID: 0}
+      npcResponse: 
+      boardToUnlockOn: {fileID: 0}
+      connectionIndexesToUnlock: 
+      boardToUnlock: {fileID: 0}
+      clueToGive: {fileID: 0}
+      outfitToGive: {fileID: 0}
+      itemGiven: 0
+      objectsToRemove: []
+      followUpOptions: []
+      isGoodbye: 0
     isGoodbye: 0
   - optionText: I solved the crime!
     requiredClue: {fileID: 0}
