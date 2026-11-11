@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ClueData
   clueName: Tyre Tracks
   description: Tyre Tracks found with the apple trail
-  itemImage: {fileID: 0}
+  itemImage: {fileID: -1443135746, guid: e82690325a4b8b647a00cd0327666d8e, type: 3}

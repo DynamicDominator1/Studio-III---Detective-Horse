@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ClueData
   clueName: Foot Prints
   description: sneaky footprints found at the bar break in
-  itemImage: {fileID: 0}
+  itemImage: {fileID: -666134190, guid: a2d4ca12834e27645a61d7ba38df97e0, type: 3}

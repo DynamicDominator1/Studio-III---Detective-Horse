@@ -819,6 +819,39 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7302407708377015030, guid: 18ce10743762c1341ab6784fb01b8a93, type: 3}
   m_PrefabInstance: {fileID: 188939800}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &193130396
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 193130397}
+  m_Layer: 0
+  m_Name: Tutorials
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &193130397
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193130396}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 44.10734, y: 1, z: -63.71661}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2141115767}
+  - {fileID: 1400233433}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &207616846
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6207,13 +6240,47 @@ MonoBehaviour:
   ignoreOutfit: 0
   requiredOutfit: {fileID: 11400000, guid: a842be62f29526d4591c7afedbd5ee51, type: 2}
   wrongOutfitLine: Go away
-  greeting: What do you want? the captain told me not to move this car until the
-    crime is solved
+  greeting: Hey Bud, I'm Block 2.0, the remix.
   dialogueOptions:
-  - optionText: Well what info do you have for me?
+  - optionText: You seem relaxed?
     requiredClue: {fileID: 0}
     requiredBoard: {fileID: 0}
-    npcResponse: 'Smashed window, stolen safe, not much else. '
+    npcResponse: 'Yeah for sure, but to be honest this is what the day to day  of
+      a policeman is like, mostly. Just lounging around  waiting for something interesting
+      or terrible to happen.  You reckon if we let these apples sit on the asphalt
+      long  enough they''ll turn to cider? That sure would give me a  smile! '
+    boardToUnlockOn: {fileID: 0}
+    connectionIndexesToUnlock: 
+    boardToUnlock: {fileID: 0}
+    clueToGive: {fileID: 0}
+    outfitToGive: {fileID: 0}
+    itemGiven: 0
+    objectsToRemove: []
+    followUpOptions: []
+    isGoodbye: 0
+  - optionText: Can you move this car for me?
+    requiredClue: {fileID: 0}
+    requiredBoard: {fileID: 0}
+    npcResponse: ' I don''t reckon you should head that way friend, seems like  the
+      scene''s still pretty hot and I don''t want to see a  humble investigator like
+      yourself knee deep in trouble. Not  unless it''s the right kind of trouble,
+      hey? Nah, I lie.  Relax man, Life is supposed to be fun! '
+    boardToUnlockOn: {fileID: 0}
+    connectionIndexesToUnlock: 
+    boardToUnlock: {fileID: 0}
+    clueToGive: {fileID: 0}
+    outfitToGive: {fileID: 0}
+    itemGiven: 0
+    objectsToRemove: []
+    followUpOptions: []
+    isGoodbye: 0
+  - optionText: What do you think happened here?
+    requiredClue: {fileID: 0}
+    requiredBoard: {fileID: 0}
+    npcResponse: 'The safe''s up and disappeared from this low-down and dirty  dive,
+      smashed window''s ample evidence of a break and enter  sitchyation. Well, hopefully
+      it all works itself out. I ate  a sizable pasta lunch and I''m too tuckered
+      for any more  policin''. '
     boardToUnlockOn: {fileID: 11400000, guid: 561c32370b8fcd345b2c5c892f7d6762, type: 2}
     connectionIndexesToUnlock: 00000000010000000200000004000000
     boardToUnlock: {fileID: 0}
@@ -6223,10 +6290,14 @@ MonoBehaviour:
     objectsToRemove: []
     followUpOptions: []
     isGoodbye: 0
-  - optionText: I solved the crime!
+  - optionText: Ive cracked the case!
     requiredClue: {fileID: 0}
     requiredBoard: {fileID: 11400000, guid: 561c32370b8fcd345b2c5c892f7d6762, type: 2}
-    npcResponse: 'wow you did your job... take it to the Captain  '
+    npcResponse: 'More like crack open a brewski! you earned it, chief. I  like that,
+      I''ll call YOU the chief from now on, and not my  fucking dad. I''d better
+      let the folks at the station know.  Proceed if you feel like it, friend. Solving
+      this petty  crime has taught me you''re truly ready for the very worst  and
+      most lethal of what this world has to offer. Go get yourself killed! '
     boardToUnlockOn: {fileID: 0}
     connectionIndexesToUnlock: 
     boardToUnlock: {fileID: 0}
@@ -6235,10 +6306,10 @@ MonoBehaviour:
     itemGiven: 0
     objectsToRemove: []
     followUpOptions:
-    - optionText: Will you move your car now?
+    - optionText: '*NEIGH*'
       requiredClue: {fileID: 0}
       requiredBoard: {fileID: 0}
-      npcResponse: Fine
+      npcResponse: Wait a second....
       boardToUnlockOn: {fileID: 0}
       connectionIndexesToUnlock: 
       boardToUnlock: {fileID: 0}
@@ -6247,7 +6318,7 @@ MonoBehaviour:
       itemGiven: 0
       objectsToRemove: []
       followUpOptions:
-      - optionText: ...
+      - optionText: '*Hoof it*'
         requiredClue: {fileID: 0}
         requiredBoard: {fileID: 0}
         npcResponse: 
@@ -6257,29 +6328,31 @@ MonoBehaviour:
         clueToGive: {fileID: 0}
         outfitToGive: {fileID: 0}
         itemGiven: 0
-        objectsToRemove:
-        - {fileID: 640238455}
-        - {fileID: 1235133321}
+        objectsToRemove: []
         followUpOptions: []
         isGoodbye: 1
       isGoodbye: 0
     isGoodbye: 0
-  - optionText: Goodbye
+  - optionText: See ya then!
     requiredClue: {fileID: 0}
-    requiredBoard: {fileID: 0}
-    npcResponse: 'wow you did your job... take it to the captain  '
-    boardToUnlockOn: {fileID: 11400000, guid: 561c32370b8fcd345b2c5c892f7d6762, type: 2}
-    connectionIndexesToUnlock: 000000000100000002000000030000000400000005000000
+    requiredBoard: {fileID: 11400000, guid: 561c32370b8fcd345b2c5c892f7d6762, type: 2}
+    npcResponse: 'More like crack open a brewski! you earned it, chief. I  like that,
+      I''ll call YOU the chief from now on, and not my  fucking dad. I''d better
+      let the folks at the station know.  Proceed if you feel like it, friend. Solving
+      this petty  crime has taught me you''re truly ready for the very worst  and
+      most lethal of what this world has to offer. Go get yourself killed! '
+    boardToUnlockOn: {fileID: 0}
+    connectionIndexesToUnlock: 
     boardToUnlock: {fileID: 0}
     clueToGive: {fileID: 0}
     outfitToGive: {fileID: 0}
     itemGiven: 0
     objectsToRemove: []
     followUpOptions:
-    - optionText: Will you move your car now?
+    - optionText: '*NEIGH*'
       requiredClue: {fileID: 0}
       requiredBoard: {fileID: 0}
-      npcResponse: Fine
+      npcResponse: Wait a second....
       boardToUnlockOn: {fileID: 0}
       connectionIndexesToUnlock: 
       boardToUnlock: {fileID: 0}
@@ -6287,22 +6360,20 @@ MonoBehaviour:
       outfitToGive: {fileID: 0}
       itemGiven: 0
       objectsToRemove: []
-      followUpOptions: []
-      isGoodbye: 0
-    - optionText: ...
-      requiredClue: {fileID: 0}
-      requiredBoard: {fileID: 0}
-      npcResponse: 
-      boardToUnlockOn: {fileID: 0}
-      connectionIndexesToUnlock: 
-      boardToUnlock: {fileID: 0}
-      clueToGive: {fileID: 0}
-      outfitToGive: {fileID: 0}
-      itemGiven: 0
-      objectsToRemove:
-      - {fileID: 640238455}
-      - {fileID: 1235133321}
-      followUpOptions: []
+      followUpOptions:
+      - optionText: '*Hoof it*'
+        requiredClue: {fileID: 0}
+        requiredBoard: {fileID: 0}
+        npcResponse: 
+        boardToUnlockOn: {fileID: 0}
+        connectionIndexesToUnlock: 
+        boardToUnlock: {fileID: 0}
+        clueToGive: {fileID: 0}
+        outfitToGive: {fileID: 0}
+        itemGiven: 0
+        objectsToRemove: []
+        followUpOptions: []
+        isGoodbye: 1
       isGoodbye: 0
     isGoodbye: 1
 --- !u!136 &1235133324
@@ -8149,6 +8220,84 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5782224540262799891, guid: 0b44af6e66d8f564d9bdeac7f8bf264f, type: 3}
+--- !u!1 &1400233432
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1400233433}
+  - component: {fileID: 1400233436}
+  - component: {fileID: 1400233435}
+  - component: {fileID: 1400233434}
+  m_Layer: 0
+  m_Name: Deduction Board
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1400233433
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400233432}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -14.66, y: 2.24841, z: -2.97}
+  m_LocalScale: {x: 0.3644742, y: 5.9409, z: 14.552067}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 193130397}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1400233434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400233432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93d671a0dc9ae104f9768ad44756ac2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HintTrigger
+  message: Complete deduction boards to progress
+  keyIcon: {fileID: -844306160, guid: c15657580542001479ed0bbde2b0ab8d, type: 3}
+  dismissKey: 3
+--- !u!65 &1400233435
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400233432}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1400233436
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400233432}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1401054674
 GameObject:
   m_ObjectHideFlags: 0
@@ -13198,6 +13347,84 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8337109364050068244, guid: 936c9f231d4a38643b6146088363c0cf, type: 3}
+--- !u!1 &2141115766
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2141115767}
+  - component: {fileID: 2141115770}
+  - component: {fileID: 2141115769}
+  - component: {fileID: 2141115768}
+  m_Layer: 0
+  m_Name: Inventory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2141115767
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141115766}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.2111816, y: 2.24841, z: 2.4761772}
+  m_LocalScale: {x: 0.3644742, y: 5.9409, z: 27.615349}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 193130397}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2141115768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141115766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93d671a0dc9ae104f9768ad44756ac2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HintTrigger
+  message: Press to view your Inventory
+  keyIcon: {fileID: -478387056, guid: c15657580542001479ed0bbde2b0ab8d, type: 3}
+  dismissKey: 23
+--- !u!65 &2141115769
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141115766}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &2141115770
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141115766}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!64 &2144124112
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13236,3 +13463,4 @@ SceneRoots:
   - {fileID: 1401054675}
   - {fileID: 1959305345}
   - {fileID: 640238459}
+  - {fileID: 193130397}

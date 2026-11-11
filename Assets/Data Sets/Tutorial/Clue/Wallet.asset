@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ClueData
   clueName: Dropped wallet
   description: a wallet with an ID inside of it
-  itemImage: {fileID: 0}
+  itemImage: {fileID: -610309310, guid: c733f12cc91d98849afd32f56c6dd164, type: 3}

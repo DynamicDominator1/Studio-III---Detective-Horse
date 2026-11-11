@@ -15,4 +15,4 @@ MonoBehaviour:
   clueName: Smashed Window
   description: The window was broken from the outside. this is probably how the perp
     got in
-  itemImage: {fileID: 0}
+  itemImage: {fileID: -1520511445, guid: 1206fa3d6c34ba6478008c311af8b17d, type: 3}

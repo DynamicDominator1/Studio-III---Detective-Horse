@@ -1,0 +1,2419 @@
+fileFormatVersion: 2
+guid: c15657580542001479ed0bbde2b0ab8d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 128
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a752ff91ff26fab40a46e618d9d67758
+      internalID: 609720232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_1
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 128
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbfd2f5010111834bbc54e3a49511adb
+      internalID: -147805005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_2
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 128
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a0b047aa3a9989408e68305a812a630
+      internalID: -1711971458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_3
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 128
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d8054bc3814db446ab45235d718dc28
+      internalID: 657277368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_4
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 128
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b646896984ef90247ad2ffa9abbe6f6e
+      internalID: 113644822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_5
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 128
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04dccd6a3dd75cc4fb219d10d35ec986
+      internalID: 1592351893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_6
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 128
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8816a490019fb5a48a0a2c675a72957c
+      internalID: -969242667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_7
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7764c360d2f3e7a46a3c6bfec794d75e
+      internalID: 1001889364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_8
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 128
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd088cf9a51cbcd488a08429fa1235cc
+      internalID: 262949722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_9
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 128
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea7b229740433a14586ba6c19cba0318
+      internalID: 1303509034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_10
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 128
+        width: 13
+        height: 13
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0d19992c7b0e194bb94f3589d76b61a
+      internalID: 1534951164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_11
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 128
+        width: 13
+        height: 13
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9509f1da7ee390f4ba25e9842ac3c843
+      internalID: -903849793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_12
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 128
+        width: 16
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c2c6e65acd1a5a41858502d4338f311
+      internalID: 519760728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_13
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 110
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b6581225e4875b4cb14dd64ee9f4d91
+      internalID: -2028186371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_14
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 110
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac493b2c0c31f04c96933ba5f43725a
+      internalID: 1317207945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_15
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 110
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 431b39a8dda325b49a0efd9e4e050b36
+      internalID: 1337479288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_16
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 110
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cdd08ca3721aa540b5bca3c28caf46b
+      internalID: -1808895590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_17
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 110
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 091ce65054357ff49a31572fa999b70e
+      internalID: 1516031810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_18
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 110
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a93e9ba359a6636418037c6e3113cbab
+      internalID: -1954686271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_19
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 110
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34597c7b65240b84aa885a7b3fce88e3
+      internalID: -2137881192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 110
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2793733521ce484182e742f1670c306
+      internalID: 782203974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_21
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 110
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86fbdac2f99707e45ae39a1152d9a4ce
+      internalID: 1079401043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_22
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 110
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c86a26ef5bf41f84fbd4e5b51a2303a6
+      internalID: 2085583875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_23
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 110
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3f9a70cf8d091b498a549af36c8afde
+      internalID: -867939806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_24
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 110
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ecea910f4608cd4082e6d74f4677915
+      internalID: -1231291055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_25
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 112
+        width: 16
+        height: 10
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 205bc491805c6d140bf75f534f1a64af
+      internalID: -428890266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_26
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 92
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a859298b9a1803645b3fcca720bbc9ea
+      internalID: 40655312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_27
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 92
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cb02e6209ac2bf4c964fab1d8ec1c0a
+      internalID: 1223635412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_28
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 92
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 845e0f46655ae5143a0d068103449a30
+      internalID: -151418575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_29
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 92
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 232703fd9941ec94985f0b6f7bb78175
+      internalID: 98630993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_30
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 92
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e43f2d3da6b56d548a0e56f3f607bafd
+      internalID: 1983547931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_31
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 92
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0f7ce6cb8f3a674e8ea00a407689b25
+      internalID: -131500460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_32
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 92
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b7cc4970fb71b9409c9b24e406bf009
+      internalID: -1729996480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_33
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 92
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24e7cf1544d0d7a4bbcf781336adb35e
+      internalID: -836738054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_34
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 92
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a685ccadb4a1f684e81cba8af416ae7f
+      internalID: -478387056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_35
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 92
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bace1658c77c5eb4ea17e88964aeee12
+      internalID: 1916813187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_36
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 92
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed72cb13a09740f4db6041a4368733df
+      internalID: -284652786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_37
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 92
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4b4f5ff31d95c34a9b968cbe6aa64f7
+      internalID: -183689839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_38
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 92
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c264786721f994a8eb9e263cfa5518
+      internalID: 1455262378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_39
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 74
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d9b10b146836294f81410d84525ac8e
+      internalID: 1227449864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_40
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 74
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 072d7361f98091640a34ad5108303a42
+      internalID: -2040570777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_41
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 74
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cef47cd9204a1c4e93f99235c3fea01
+      internalID: -499745317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_42
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 74
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d6aacd0e204164a99c834c5bf89978
+      internalID: 1046323514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_43
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 74
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf787e46fbed6d7439efe2523ab98bb2
+      internalID: 1634473303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_44
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 74
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e99c000b5fb1848888fc103289b718
+      internalID: -756922109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_45
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 74
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 231e4a3a27c4687498d783a88b460e48
+      internalID: 878945765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_46
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 74
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e574d207a181d1408925e3b8354768c
+      internalID: -58882029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_47
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 74
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 925c2356407110645bd9d5445129a3e2
+      internalID: -1862275747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_48
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 74
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 903708d69c65f0b4881981e4a3b3bc94
+      internalID: 676786574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_49
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 74
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d03973f1c748264da5afc91fc3d0545
+      internalID: 1750661225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_50
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 74
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e28b4c8c4eede24eaf4c93fffce2e66
+      internalID: -414828127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_51
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 74
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ef4a26f3c87fe468361b0d11e16ee2
+      internalID: -2104520709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_52
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 56
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfa78d9b532bfa84988dab66a1d739e9
+      internalID: 939891691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_53
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 56
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe1d00a5d85b4944f8dac8a9306f4e0a
+      internalID: 398533254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_54
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 56
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 476c2b088fedbfc43a3fbfa16b12f970
+      internalID: 1801391029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_55
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 56
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 319420407114f4844927fa7a9f840229
+      internalID: 1274351645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_56
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 56
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9828a9046128d26458465951c267c092
+      internalID: 886552118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_57
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 56
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 209e3c871b39b284cb0d0056ed50412c
+      internalID: -1154789847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_58
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 56
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb08a70bcb9932f4b96d31e6538ad570
+      internalID: -4080263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_59
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 56
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5c4877ba85be6e4ebcacbd6f223ed48
+      internalID: 648204218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_60
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 56
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2947bb5d6d4465f499ef79d84345c137
+      internalID: 1235768229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_61
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 56
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15d5d105d83b4a249ad7be4264c5633f
+      internalID: 994595811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_62
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 56
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b656237322aab834d8eb511e99f131f0
+      internalID: -588977779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_63
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 56
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32271c3cbcec404438a41157e87a78ce
+      internalID: -410513379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_64
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 56
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fcdf087c78ab6648b9d384c20bc1712
+      internalID: -497947842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_65
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 38
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e7a937323183ab4db1aabd25b129230
+      internalID: 1855908381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_66
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 38
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8815eba573a852b49b173296884c690a
+      internalID: 103643114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_67
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 38
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb701aa92712a6a4cb11de7cfa0d842e
+      internalID: 1567367826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_68
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 38
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 486caab6e3343f6438869429fe5f930f
+      internalID: -100799774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_69
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 38
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a5471e25e0ed1c49bfb1927402dc2d7
+      internalID: 1107407287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_70
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 38
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e95d925c31eff3a4b89464d3e0f35359
+      internalID: 1270815324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_71
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 38
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a2b47c1d3aee514498cb20ca4424419
+      internalID: 1940726180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_72
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 38
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6489281c77038a439910301f94787fe
+      internalID: -539402145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_73
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 38
+        width: 13
+        height: 13
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17afe360cec96944d9af0d98a6dce862
+      internalID: -114340630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_74
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 38
+        width: 13
+        height: 13
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d019c2eb99aeafb468dc97ac8e9e5950
+      internalID: -361260778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_75
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 38
+        width: 13
+        height: 13
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8f13348ad694af4e909277c9af700e6
+      internalID: 910471722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_76
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 38
+        width: 13
+        height: 13
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 727ef89748b588049a2e400693820c9e
+      internalID: -814179541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_77
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 39
+        width: 16
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 435b59ccc4f918a40bc3ae4a0192edac
+      internalID: -1621131768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_78
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 21
+        width: 16
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 082f395987238a44da46e37f9e1f161d
+      internalID: -111875624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_79
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 21
+        width: 16
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c352a50897248404486db01748e04114
+      internalID: 595421301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_80
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 21
+        width: 16
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d489358223d2ee743b337a20094ef11a
+      internalID: 2141874732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_81
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 21
+        width: 16
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5fdddc76051808438abe676dbb77c4b
+      internalID: -1618614182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_82
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 21
+        width: 16
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 897b6cc5fb01fc843885a709861c6091
+      internalID: -844306160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_83
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 21
+        width: 16
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a253f7d1dc6b5e947b0ee7bb53cc57d7
+      internalID: 29827377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_84
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 21
+        width: 16
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb28cdceea7afdd41892362596779e77
+      internalID: 163367190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_85
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 22
+        width: 16
+        height: 10
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd1f2d123b15be24cb7e12b4582893db
+      internalID: -797658071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_86
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 20
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61dbd58371dcfb14481d8456e94e3e46
+      internalID: -1197103709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_87
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 20
+        width: 14
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f075ecb4f584fb743987e6ebe4b626ae
+      internalID: 927004477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_88
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 20
+        width: 13
+        height: 13
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6076a35f8955cb64eaf5380b5da6f712
+      internalID: 817779301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_89
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 20
+        width: 16
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35db3b37eb9c0d245971a33453b1a51b
+      internalID: 1353715157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_90
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 21
+        width: 16
+        height: 10
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f64d2fcaafdcc274e9a4e53b275320ae
+      internalID: -938261075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_91
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1
+        width: 12
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a53b186ee03b45745be251bfed268e51
+      internalID: 1927842011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_92
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1
+        width: 12
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f38427bb22b389d4485558afcdeed3f0
+      internalID: -441003047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_93
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1
+        width: 12
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39106bcaa91ed794e8e5a2f8cd8b6b96
+      internalID: 1072263559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_94
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1
+        width: 13
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08a729077c80bb24aae26586d357e47a
+      internalID: -878807232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_95
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 1
+        width: 13
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38de01177785e584aaa2b00bc912502e
+      internalID: 2109574126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_96
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 1
+        width: 13
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d333121709c4b146a62669d01c5914a
+      internalID: 1736206167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_97
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 1
+        width: 11
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a752a6830fbeb446afe1cb64ecd1b30
+      internalID: -449250354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_98
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1
+        width: 11
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fec4b498c9b8c3a4093d324ef5079740
+      internalID: -1988803816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SimpleUI_Keyboard_Thin_Clicked_99
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1
+        width: 11
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50ac15c3d219d254f9b11a48ab247bd3
+      internalID: 1286520125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4bd9440b1b96e5e4899c5455ed5e65ff
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":16.0,"y":16.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":1.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":1,"pivotUnitMode":1,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      SimpleUI_Keyboard_Thin_Clicked_0: 609720232
+      SimpleUI_Keyboard_Thin_Clicked_1: -147805005
+      SimpleUI_Keyboard_Thin_Clicked_10: 1534951164
+      SimpleUI_Keyboard_Thin_Clicked_11: -903849793
+      SimpleUI_Keyboard_Thin_Clicked_12: 519760728
+      SimpleUI_Keyboard_Thin_Clicked_13: -2028186371
+      SimpleUI_Keyboard_Thin_Clicked_14: 1317207945
+      SimpleUI_Keyboard_Thin_Clicked_15: 1337479288
+      SimpleUI_Keyboard_Thin_Clicked_16: -1808895590
+      SimpleUI_Keyboard_Thin_Clicked_17: 1516031810
+      SimpleUI_Keyboard_Thin_Clicked_18: -1954686271
+      SimpleUI_Keyboard_Thin_Clicked_19: -2137881192
+      SimpleUI_Keyboard_Thin_Clicked_2: -1711971458
+      SimpleUI_Keyboard_Thin_Clicked_20: 782203974
+      SimpleUI_Keyboard_Thin_Clicked_21: 1079401043
+      SimpleUI_Keyboard_Thin_Clicked_22: 2085583875
+      SimpleUI_Keyboard_Thin_Clicked_23: -867939806
+      SimpleUI_Keyboard_Thin_Clicked_24: -1231291055
+      SimpleUI_Keyboard_Thin_Clicked_25: -428890266
+      SimpleUI_Keyboard_Thin_Clicked_26: 40655312
+      SimpleUI_Keyboard_Thin_Clicked_27: 1223635412
+      SimpleUI_Keyboard_Thin_Clicked_28: -151418575
+      SimpleUI_Keyboard_Thin_Clicked_29: 98630993
+      SimpleUI_Keyboard_Thin_Clicked_3: 657277368
+      SimpleUI_Keyboard_Thin_Clicked_30: 1983547931
+      SimpleUI_Keyboard_Thin_Clicked_31: -131500460
+      SimpleUI_Keyboard_Thin_Clicked_32: -1729996480
+      SimpleUI_Keyboard_Thin_Clicked_33: -836738054
+      SimpleUI_Keyboard_Thin_Clicked_34: -478387056
+      SimpleUI_Keyboard_Thin_Clicked_35: 1916813187
+      SimpleUI_Keyboard_Thin_Clicked_36: -284652786
+      SimpleUI_Keyboard_Thin_Clicked_37: -183689839
+      SimpleUI_Keyboard_Thin_Clicked_38: 1455262378
+      SimpleUI_Keyboard_Thin_Clicked_39: 1227449864
+      SimpleUI_Keyboard_Thin_Clicked_4: 113644822
+      SimpleUI_Keyboard_Thin_Clicked_40: -2040570777
+      SimpleUI_Keyboard_Thin_Clicked_41: -499745317
+      SimpleUI_Keyboard_Thin_Clicked_42: 1046323514
+      SimpleUI_Keyboard_Thin_Clicked_43: 1634473303
+      SimpleUI_Keyboard_Thin_Clicked_44: -756922109
+      SimpleUI_Keyboard_Thin_Clicked_45: 878945765
+      SimpleUI_Keyboard_Thin_Clicked_46: -58882029
+      SimpleUI_Keyboard_Thin_Clicked_47: -1862275747
+      SimpleUI_Keyboard_Thin_Clicked_48: 676786574
+      SimpleUI_Keyboard_Thin_Clicked_49: 1750661225
+      SimpleUI_Keyboard_Thin_Clicked_5: 1592351893
+      SimpleUI_Keyboard_Thin_Clicked_50: -414828127
+      SimpleUI_Keyboard_Thin_Clicked_51: -2104520709
+      SimpleUI_Keyboard_Thin_Clicked_52: 939891691
+      SimpleUI_Keyboard_Thin_Clicked_53: 398533254
+      SimpleUI_Keyboard_Thin_Clicked_54: 1801391029
+      SimpleUI_Keyboard_Thin_Clicked_55: 1274351645
+      SimpleUI_Keyboard_Thin_Clicked_56: 886552118
+      SimpleUI_Keyboard_Thin_Clicked_57: -1154789847
+      SimpleUI_Keyboard_Thin_Clicked_58: -4080263
+      SimpleUI_Keyboard_Thin_Clicked_59: 648204218
+      SimpleUI_Keyboard_Thin_Clicked_6: -969242667
+      SimpleUI_Keyboard_Thin_Clicked_60: 1235768229
+      SimpleUI_Keyboard_Thin_Clicked_61: 994595811
+      SimpleUI_Keyboard_Thin_Clicked_62: -588977779
+      SimpleUI_Keyboard_Thin_Clicked_63: -410513379
+      SimpleUI_Keyboard_Thin_Clicked_64: -497947842
+      SimpleUI_Keyboard_Thin_Clicked_65: 1855908381
+      SimpleUI_Keyboard_Thin_Clicked_66: 103643114
+      SimpleUI_Keyboard_Thin_Clicked_67: 1567367826
+      SimpleUI_Keyboard_Thin_Clicked_68: -100799774
+      SimpleUI_Keyboard_Thin_Clicked_69: 1107407287
+      SimpleUI_Keyboard_Thin_Clicked_7: 1001889364
+      SimpleUI_Keyboard_Thin_Clicked_70: 1270815324
+      SimpleUI_Keyboard_Thin_Clicked_71: 1940726180
+      SimpleUI_Keyboard_Thin_Clicked_72: -539402145
+      SimpleUI_Keyboard_Thin_Clicked_73: -114340630
+      SimpleUI_Keyboard_Thin_Clicked_74: -361260778
+      SimpleUI_Keyboard_Thin_Clicked_75: 910471722
+      SimpleUI_Keyboard_Thin_Clicked_76: -814179541
+      SimpleUI_Keyboard_Thin_Clicked_77: -1621131768
+      SimpleUI_Keyboard_Thin_Clicked_78: -111875624
+      SimpleUI_Keyboard_Thin_Clicked_79: 595421301
+      SimpleUI_Keyboard_Thin_Clicked_8: 262949722
+      SimpleUI_Keyboard_Thin_Clicked_80: 2141874732
+      SimpleUI_Keyboard_Thin_Clicked_81: -1618614182
+      SimpleUI_Keyboard_Thin_Clicked_82: -844306160
+      SimpleUI_Keyboard_Thin_Clicked_83: 29827377
+      SimpleUI_Keyboard_Thin_Clicked_84: 163367190
+      SimpleUI_Keyboard_Thin_Clicked_85: -797658071
+      SimpleUI_Keyboard_Thin_Clicked_86: -1197103709
+      SimpleUI_Keyboard_Thin_Clicked_87: 927004477
+      SimpleUI_Keyboard_Thin_Clicked_88: 817779301
+      SimpleUI_Keyboard_Thin_Clicked_89: 1353715157
+      SimpleUI_Keyboard_Thin_Clicked_9: 1303509034
+      SimpleUI_Keyboard_Thin_Clicked_90: -938261075
+      SimpleUI_Keyboard_Thin_Clicked_91: 1927842011
+      SimpleUI_Keyboard_Thin_Clicked_92: -441003047
+      SimpleUI_Keyboard_Thin_Clicked_93: 1072263559
+      SimpleUI_Keyboard_Thin_Clicked_94: -878807232
+      SimpleUI_Keyboard_Thin_Clicked_95: 2109574126
+      SimpleUI_Keyboard_Thin_Clicked_96: 1736206167
+      SimpleUI_Keyboard_Thin_Clicked_97: -449250354
+      SimpleUI_Keyboard_Thin_Clicked_98: -1988803816
+      SimpleUI_Keyboard_Thin_Clicked_99: 1286520125
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

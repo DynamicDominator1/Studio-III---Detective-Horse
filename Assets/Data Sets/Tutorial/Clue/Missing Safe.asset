@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ClueData
   clueName: Missing Safe
   description: A safe, or lack thereof, full of cash
-  itemImage: {fileID: 0}
+  itemImage: {fileID: 467396976, guid: 1722b6145f3226543b1b9ca33efb58b3, type: 3}
