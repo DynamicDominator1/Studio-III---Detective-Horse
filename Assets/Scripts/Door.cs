@@ -8,6 +8,7 @@ public class Door : Interactable
 
     public override void Interact()
     {
+        PlayInteractSound();
         RoomManager.Instance.GoToRoom(targetRoom, targetSpawnPoint); // move player to target
     }
 }

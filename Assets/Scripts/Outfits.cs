@@ -8,6 +8,7 @@ public class Outfit : Interactable
     // when interacted with
     public override void Interact()
     {
+        PlayInteractSound();
         OutfitManager.Instance.AddOutfit(outfitData); // add to players outfit inventory
         NotificationUI.Instance.Show("Outfit found: " + outfitData.outfitName, outfitData.itemImage);
         WorldStateManager.Remove(gameObject);

@@ -15,10 +15,12 @@ public class NPC : Interactable
     {
         if (!ignoreOutfit && OutfitManager.Instance.currentOutfit != requiredOutfit) // outfit check skipped when ignoreOutfit ticked
         {
+            PlayInteractSound();
             DialogueUI.Instance.ShowDismissal(wrongOutfitLine); // show wrong outfit line
             return;
         }
 
+        PlayInteractSound();
         currentOptions = dialogueOptions; // start with base options
         DialogueUI.Instance.OpenDialogue(this, greeting, currentOptions); // start with greeting
     }

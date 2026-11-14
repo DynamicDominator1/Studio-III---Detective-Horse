@@ -145,6 +145,7 @@ public class RoomManager : MonoBehaviour
         {
             case RoomEnum.WhiteBox1: return SpawnPointEnum.WhiteBox1Entrance; // sets room default spawn point
             case RoomEnum.WhiteBox2: return SpawnPointEnum.WhiteBox2Entrance;
+            case RoomEnum.StreetLevelTWO: return SpawnPointEnum.DetStreetSTART;
             default:
                 Debug.LogError("No default spawn point mapped for " + room);
                 return default;

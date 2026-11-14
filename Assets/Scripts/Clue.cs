@@ -7,6 +7,7 @@ public class Clue : Interactable
 
     public override void Interact()
     {
+        PlayInteractSound();
         InventoryManager.Instance.AddClue(clueData); 
         NotificationUI.Instance.Show("Clue found: " + clueData.clueName, clueData.itemImage);
         WorldStateManager.Remove(gameObject);

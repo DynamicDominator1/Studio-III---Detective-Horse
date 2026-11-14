@@ -7,7 +7,7 @@ public class Interactable : MonoBehaviour
 
     private Renderer objectRenderer; // object renderer used to swap mats
     private Material originalMaterial; // base objects mat
-
+    public AudioClip interactSound; // interaction sound. empty = blank
     void Awake()
     {
         objectRenderer = GetComponentInChildren<Renderer>(); // get renderer
@@ -28,9 +28,19 @@ public class Interactable : MonoBehaviour
 
     }
 
+  
+    protected void PlayInteractSound()
+    {
+        if (AudioManager.Instance != null) 
+        {
+            AudioManager.Instance.PlaySFX(interactSound); // play interaction sound
+        }
+    }
+
     public virtual void Interact()
     {
         Debug.Log(interactionName + " interacted with");
+        PlayInteractSound(); // play interaction sound
     }
 
     // highlight mat on off

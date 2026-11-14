@@ -1232,6 +1232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Door
   interactionName: Trial Door 1
   highlightMaterial: {fileID: 2100000, guid: 8ffa821da36c3dd41a832f465cf96a67, type: 2}
+  interactSound: {fileID: 8300000, guid: ccd8363690f9cce4e971ec72aca78794, type: 3}
   targetRoom: 2
   targetSpawnPoint: 2
 --- !u!1 &260684891
@@ -1822,6 +1823,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPC
   interactionName: Cop
   highlightMaterial: {fileID: 2100000, guid: 2180395c4d877a040afe5beff196a163, type: 2}
+  interactSound: {fileID: 8300000, guid: fa5bdb31a19089a4db96c5e5ea47e2e4, type: 3}
   ignoreOutfit: 1
   requiredOutfit: {fileID: 0}
   wrongOutfitLine: 
@@ -2011,6 +2013,52 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1135959964}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &481364983
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 481364985}
+  - component: {fileID: 481364984}
+  m_Layer: 0
+  m_Name: Room Audio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &481364984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481364983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 651ef86527fb9c840b1da28fd995396c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RoomAudio
+  music: {fileID: 8300000, guid: 92ad0aa86bd88b049ab7e40d6a9388e9, type: 3}
+  ambience: {fileID: 8300000, guid: e0ac0cc98a426e44fa2a7ecb60fe48b4, type: 3}
+--- !u!4 &481364985
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481364983}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 35.02241, y: 0.71841, z: -91.65141}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &529982223
 GameObject:
@@ -2565,6 +2613,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Clue
   interactionName: Sus Apple
   highlightMaterial: {fileID: 2100000, guid: f7bef55f92a520d4b8b3a6c49567f9b7, type: 2}
+  interactSound: {fileID: 8300000, guid: 66ea84261625a494799fe79aa212fba6, type: 3}
   clueData: {fileID: 11400000, guid: bbb598f347d8dd04ca538d1b0997d6c0, type: 2}
 --- !u!114 &608800187
 MonoBehaviour:
@@ -3640,6 +3689,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPC
   interactionName: Officer Block
   highlightMaterial: {fileID: 2100000, guid: 2180395c4d877a040afe5beff196a163, type: 2}
+  interactSound: {fileID: 8300000, guid: fa5bdb31a19089a4db96c5e5ea47e2e4, type: 3}
   ignoreOutfit: 0
   requiredOutfit: {fileID: 11400000, guid: a842be62f29526d4591c7afedbd5ee51, type: 2}
   wrongOutfitLine: ' Move along now, civilian! Nothing to see here but the  destructive
@@ -9549,3 +9599,4 @@ SceneRoots:
   - {fileID: 1401054675}
   - {fileID: 784580119}
   - {fileID: 1385977886}
+  - {fileID: 481364985}
