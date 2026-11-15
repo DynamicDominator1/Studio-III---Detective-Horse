@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1272263667896643284}
   - component: {fileID: 79186524532069476}
   - component: {fileID: 6294459146593588943}
+  - component: {fileID: 6642199197837595228}
   m_Layer: 0
   m_Name: Dialogue Button
   m_TagString: Untagged
@@ -121,6 +122,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6642199197837595228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557216234469180267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad498d8d5e65d79408731bfd6613ee43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonSound
+  clickSound: {fileID: 8300000, guid: dfcd59825a679184ea35e8f70bd8c595, type: 3}
 --- !u!1 &5090290583300160660
 GameObject:
   m_ObjectHideFlags: 0

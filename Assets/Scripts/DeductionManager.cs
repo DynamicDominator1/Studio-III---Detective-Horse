@@ -6,7 +6,9 @@ public class DeductionManager : MonoBehaviour
     public static DeductionManager Instance;
 
     public List<DeductionBoardData> allBoards; // all game boards
+    public AudioClip boardSolveSound;
     private int currentBoardIndex = 0;
+    private HashSet<DeductionBoardData> solvedBoards = new HashSet<DeductionBoardData>();
 
     void Awake()
     {
@@ -17,11 +19,12 @@ public class DeductionManager : MonoBehaviour
         else
         {
             Destroy(gameObject); // ensure only 1 ded manager
+            return;
         }
 
-#if UNITY_EDITOR
+
         ResetAllBoardsForTesting(); // resets boards within editor for testing
-#endif
+
 
     }
 
@@ -84,6 +87,12 @@ public class DeductionManager : MonoBehaviour
         if (current.IsBoardComplete())
         {
             Debug.Log(current.boardName + " Complete!");
+
+            if (solvedBoards.Add(current) && AudioManager.Instance != null) // true if boards first time being added
+            {
+                AudioManager.Instance.PlaySFX(boardSolveSound); 
+            }
+
 
             // next board(s) unlocked
             foreach (DeductionBoardData board in current.boardsToUnlock)

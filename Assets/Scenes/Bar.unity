@@ -17201,7 +17201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Outfit
   interactionName: Bar Outfit
   highlightMaterial: {fileID: 2100000, guid: 2180395c4d877a040afe5beff196a163, type: 2}
-  interactSound: {fileID: 8300000, guid: fa5bdb31a19089a4db96c5e5ea47e2e4, type: 3}
+  interactSound: {fileID: 8300000, guid: 66ea84261625a494799fe79aa212fba6, type: 3}
   outfitData: {fileID: 11400000, guid: 12003a27e5baa854bacbaee3daa29fac, type: 2}
 --- !u!114 &2039540428
 MonoBehaviour:
