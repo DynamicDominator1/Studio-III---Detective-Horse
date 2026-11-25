@@ -1,0 +1,357 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8266830652692856336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d75205dbc22a79a4380dd6a5c8b18f6a, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  graph: {fileID: 11400000}
+  position: {x: -664, y: -856}
+  ports:
+    keys:
+    - inLine
+    - outLine
+    values:
+    - _fieldName: inLine
+      _node: {fileID: -8266830652692856336}
+      _typeQualifiedName: DialogueLink, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: outLine
+        node: {fileID: -8140555458769426589}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: outLine
+      _node: {fileID: -8266830652692856336}
+      _typeQualifiedName: DialogueLink, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: inLine
+        node: {fileID: 4324053200172305273}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  isStart: 0
+  optionText: Who are you?
+  requiredClue: {fileID: 0}
+  requiredBoard: {fileID: 0}
+  npcResponse: I am Barnabas Block, sheriff apparent to this sordid, languishing
+    township! Though I may be lacking in many of the ethical scruples associated
+    with my venerable profession, I do so relish the accompanying benefits!
+  boardToUnlockOn: {fileID: 0}
+  connectionIndexesToUnlock: 
+  boardToUnlock: {fileID: 0}
+  clueToGive: {fileID: 0}
+  outfitToGive: {fileID: 0}
+  objectIndexesToRemove: 
+  isGoodbye: 0
+--- !u!114 &-8140555458769426589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d75205dbc22a79a4380dd6a5c8b18f6a, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  graph: {fileID: 11400000}
+  position: {x: -1336, y: -248}
+  ports:
+    keys:
+    - inLine
+    - outLine
+    values:
+    - _fieldName: inLine
+      _node: {fileID: -8140555458769426589}
+      _typeQualifiedName: DialogueLink, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: outLine
+      _node: {fileID: -8140555458769426589}
+      _typeQualifiedName: DialogueLink, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: inLine
+        node: {fileID: -8266830652692856336}
+        reroutePoints: []
+      - fieldName: inLine
+        node: {fileID: 4324053200172305273}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  isStart: 1
+  optionText: 
+  requiredClue: {fileID: 0}
+  requiredBoard: {fileID: 0}
+  npcResponse: Ah you have availed yourself at last, Detective! Some vandal has given
+    the runaround to this low-down and dirty dive!
+  boardToUnlockOn: {fileID: 0}
+  connectionIndexesToUnlock: 
+  boardToUnlock: {fileID: 0}
+  clueToGive: {fileID: 0}
+  outfitToGive: {fileID: 0}
+  objectIndexesToRemove: 
+  isGoodbye: 0
+--- !u!114 &-1425591296596967462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d75205dbc22a79a4380dd6a5c8b18f6a, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  graph: {fileID: 11400000}
+  position: {x: 1624, y: -360}
+  ports:
+    keys:
+    - inLine
+    - outLine
+    values:
+    - _fieldName: inLine
+      _node: {fileID: -1425591296596967462}
+      _typeQualifiedName: DialogueLink, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: outLine
+        node: {fileID: 6039292664465175998}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: outLine
+      _node: {fileID: -1425591296596967462}
+      _typeQualifiedName: DialogueLink, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  isStart: 0
+  optionText: Thank you kind Sir
+  requiredClue: {fileID: 0}
+  requiredBoard: {fileID: 0}
+  npcResponse: 
+  boardToUnlockOn: {fileID: 0}
+  connectionIndexesToUnlock: 
+  boardToUnlock: {fileID: 0}
+  clueToGive: {fileID: 0}
+  outfitToGive: {fileID: 0}
+  objectIndexesToRemove: 
+  isGoodbye: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 263871ce7b3a7ae4ca7e7173ec2ea97c, type: 3}
+  m_Name: Off. Block
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueGraph
+  nodes:
+  - {fileID: -8140555458769426589}
+  - {fileID: -8266830652692856336}
+  - {fileID: 4324053200172305273}
+  - {fileID: 1186841335969690789}
+  - {fileID: 6039292664465175998}
+  - {fileID: -1425591296596967462}
+--- !u!114 &1186841335969690789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d75205dbc22a79a4380dd6a5c8b18f6a, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  graph: {fileID: 11400000}
+  position: {x: 440, y: -328}
+  ports:
+    keys:
+    - inLine
+    - outLine
+    values:
+    - _fieldName: inLine
+      _node: {fileID: 1186841335969690789}
+      _typeQualifiedName: DialogueLink, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: outLine
+        node: {fileID: 4324053200172305273}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: outLine
+      _node: {fileID: 1186841335969690789}
+      _typeQualifiedName: DialogueLink, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: inLine
+        node: {fileID: 6039292664465175998}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  isStart: 0
+  optionText: Do you know who's responsible?
+  requiredClue: {fileID: 0}
+  requiredBoard: {fileID: 0}
+  npcResponse: Unfortunately I must concede the vexing rogue is as of yet at large.
+  boardToUnlockOn: {fileID: 0}
+  connectionIndexesToUnlock: 
+  boardToUnlock: {fileID: 0}
+  clueToGive: {fileID: 0}
+  outfitToGive: {fileID: 0}
+  objectIndexesToRemove: 
+  isGoodbye: 0
+--- !u!114 &4324053200172305273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d75205dbc22a79a4380dd6a5c8b18f6a, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  graph: {fileID: 11400000}
+  position: {x: -136, y: -56}
+  ports:
+    keys:
+    - inLine
+    - outLine
+    values:
+    - _fieldName: inLine
+      _node: {fileID: 4324053200172305273}
+      _typeQualifiedName: DialogueLink, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: outLine
+        node: {fileID: -8140555458769426589}
+        reroutePoints: []
+      - fieldName: outLine
+        node: {fileID: -8266830652692856336}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: outLine
+      _node: {fileID: 4324053200172305273}
+      _typeQualifiedName: DialogueLink, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: inLine
+        node: {fileID: 1186841335969690789}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  isStart: 0
+  optionText: What's the situation, Officer?
+  requiredClue: {fileID: 0}
+  requiredBoard: {fileID: 0}
+  npcResponse: Dire I'm afraid, the hoodlum has fled the scene thereby leaving a
+    path of destruction in his wake, befouled by unsightly tire tracks
+  boardToUnlockOn: {fileID: 0}
+  connectionIndexesToUnlock: 
+  boardToUnlock: {fileID: 0}
+  clueToGive: {fileID: 0}
+  outfitToGive: {fileID: 0}
+  objectIndexesToRemove: 
+  isGoodbye: 0
+--- !u!114 &6039292664465175998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d75205dbc22a79a4380dd6a5c8b18f6a, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  graph: {fileID: 11400000}
+  position: {x: 1064, y: 248}
+  ports:
+    keys:
+    - inLine
+    - outLine
+    values:
+    - _fieldName: inLine
+      _node: {fileID: 6039292664465175998}
+      _typeQualifiedName: DialogueLink, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: outLine
+        node: {fileID: 1186841335969690789}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: outLine
+      _node: {fileID: 6039292664465175998}
+      _typeQualifiedName: DialogueLink, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: inLine
+        node: {fileID: -1425591296596967462}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  isStart: 0
+  optionText: Permit me passage beyond this domain, brave sentinel!
+  requiredClue: {fileID: 0}
+  requiredBoard: {fileID: 0}
+  npcResponse: For what reason dost thou speak with such pomposity? Art thou perhaps
+    a candy ass? Though, I suppose for a fellow official a sanction must be made.
+    Proceed!
+  boardToUnlockOn: {fileID: 0}
+  connectionIndexesToUnlock: 
+  boardToUnlock: {fileID: 0}
+  clueToGive: {fileID: 0}
+  outfitToGive: {fileID: 0}
+  objectIndexesToRemove: 0000000001000000
+  isGoodbye: 0

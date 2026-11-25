@@ -20,6 +20,9 @@ public class InventoryManager : MonoBehaviour
 
     public void AddClue(ClueData clue)
     {
+
+        if (collectedClues.Contains(clue)) return; // return if clue in inventory
+
         collectedClues.Add(clue); // add clue to inventory
         Debug.Log("Picked up clue: " + clue.clueName);
     }

@@ -528,14 +528,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\n\n\n\n\n\n\n\n\n\n\n\n\n<size=250%>Detective Horse\n<size=80%>By Studio
-    Horse Detectives\n\n\n\n\n\n<size=100%>\nDirected by Jayden Bressan\n\nTeam Lead
-    \tby Max 'Maggot' Hoad\t\n\nStory Designed by Isaac Reid\n\n\n\n\n\n<pos=4%>Concept
-    Art<pos=45%>Shanika Haylock-Mitchell\n\n<pos=45%>Arianna McPherson\n\n\n\n<pos=-5%>Character
-    Models<pos=45%>Riley Gritsch  \n             \n<pos=45%>Saburi Chavan\n\n\n\n<pos=0.5%>Environments<pos=45%>Max
-    'Maggot' Hoad\n\n\n\n<pos=-2%>Set Dressing Models<pos=45%>Amber-Leigh Eager\n\n<pos=45%>Daniel
-    Steenkamp\n\n<pos=45%> Saburi Chavan\n\n\n\n<pos=-0.5%>Programming<pos=45%>Jayden
-    Bressan\n\n\n\n<pos=-0.5%>Engine Design<pos=45%>Jayden Bressan\n\n\n\n<pos=-5%>Comic
+  m_text: "\n\n\n\n\n\n<size=250%>Detective Horse\n<size=80%>By Studio Horse Detectives\n\n\n\n\n\n<size=100%>\nDirected
+    by Jayden Bressan\n\nTeam Lead \tby Max 'Maggot' Hoad\t\n\nStory Designed by
+    Isaac Reid\n\n\n\n\n\n<pos=4%>Concept Art<pos=45%>Shanika Haylock-Mitchell\n\n<pos=45%>Arianna
+    McPherson\n\n\n\n<pos=-5%>Character Models<pos=45%>Riley Gritsch  \n            
+    \n<pos=45%>Saburi Chavan\n\n\n\n<pos=0.5%>Environments<pos=45%>Max 'Maggot' Hoad\n\n\n\n<pos=-2%>Set
+    Dressing Models<pos=45%>Amber-Leigh Eager\n\n<pos=45%>Daniel Steenkamp\n\n<pos=45%>
+    Saburi Chavan\n\n\n\n<pos=-0.5%>Programming<pos=45%>Jayden Bressan\n\n\n\n<pos=-5%>Comic
     Animatics<pos=45%>Isaac Reid\n\n\n\n<pos=-5%>Rigging & Animations<pos=45%>Riley
     Gritsch\n\n\n\n<pos=1.5%>UI Design<pos=45%>Jayden Bressan\n\n\n\n<pos=6%>UI Artwork<pos=45%>Shanika
     Haylock-Mitchell\n\n\n\nLevel Design<pos=45%>Jayden Bressan\n\n<pos=45%>Max 'Maggot'
@@ -545,10 +544,10 @@ MonoBehaviour:
     Catchpoole\n\n\n\n\nRetro Shaders Pro created by Daniel Illet\n\nRetro Pixel
     Keys by ItsBluBrry\n\nMusic and Sound provided by Pixabay\n\nDesigned and created
     in Unity by Studio Horse Detectives \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<pos=-15%>Thank
-    you for playing \n\t- Studio Horse Detectives\n\n\nSee ya Detective Horse...\n\n\n\n\n\n\n\n\n\n\n\n\n\n<alpha=#00>Gay"
+    you for playing \n\t- Studio Horse Detectives\n\n\nSee ya Detective Horse...\n\n\n<alpha=#00>Gay"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0c1b51940dc17f043965c9f62cc56092, type: 2}
+  m_sharedMaterial: {fileID: 869615234036611537, guid: 0c1b51940dc17f043965c9f62cc56092, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -572,8 +571,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18.6
-  m_fontSizeBase: 18.6
+  m_fontSize: 25.4
+  m_fontSizeBase: 25.4
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

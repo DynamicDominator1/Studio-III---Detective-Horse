@@ -49,6 +49,9 @@ public class OutfitManager : MonoBehaviour
 
     public void AddOutfit(OutfitData outfit)
     {
+
+        if (ownedOutfits.Contains(outfit)) return;
+
         ownedOutfits.Add(outfit); // add fit to inventory
         Debug.Log("Picked up outfit: " + outfit.outfitName);
     }

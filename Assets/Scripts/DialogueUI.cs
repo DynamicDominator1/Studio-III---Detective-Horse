@@ -31,30 +31,30 @@ public class DialogueUI : MonoBehaviour
         dialoguePanel.SetActive(false); // panel hidden at start 
     }
 
-    public void OpenDialogue(NPC npc, string line, List<Dialogue> options)
+    public void OpenDialogue(NPC npc, string line, List<Dialogue> options) // List<DialogueNode>
     {
-        currentNPC = npc; 
+        currentNPC = npc;
         UIStateManager.Instance.OpenPanel(dialoguePanel); // show UI
-        UpdateDialogue(line, options);  // populate with correct text
+        UpdateDialogue(line, options);  // populate
     }
 
 
-    public void UpdateDialogue(string line, List<Dialogue> options)
+    public void UpdateDialogue(string line, List<Dialogue> options) // List<DialogueNode>
     {
         npcLineText.text = line; // set npc current line
 
-        // clear old player responses
-        foreach (Transform child in optionsContainer) 
+        // clear old player response
+        foreach (Transform child in optionsContainer)
         {
             Destroy(child.gameObject); // delete
         }
 
 
         // each response gets a button
-        foreach (Dialogue option in options)
+        foreach (Dialogue option in options) 
         {
-            bool hasClue = option.requiredClue == null || InventoryManager.Instance.collectedClues.Contains(option.requiredClue); 
-            bool hasBoard = option.requiredBoard == null || option.requiredBoard.IsBoardComplete(); 
+            bool hasClue = option.requiredClue == null || InventoryManager.Instance.collectedClues.Contains(option.requiredClue);
+            bool hasBoard = option.requiredBoard == null || option.requiredBoard.IsBoardComplete();
             bool isUnlocked = hasClue && hasBoard;
 
             GameObject buttonObj = Instantiate(optionButtonPrefab, optionsContainer);

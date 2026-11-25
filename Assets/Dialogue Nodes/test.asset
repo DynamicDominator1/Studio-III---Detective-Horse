@@ -1,0 +1,177 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8034579283630578865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d75205dbc22a79a4380dd6a5c8b18f6a, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  graph: {fileID: 11400000}
+  position: {x: 88, y: 88}
+  ports:
+    keys:
+    - inLine
+    - outLine
+    values:
+    - _fieldName: inLine
+      _node: {fileID: -8034579283630578865}
+      _typeQualifiedName: DialogueLink, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: outLine
+        node: {fileID: -6823872928235288291}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: outLine
+      _node: {fileID: -8034579283630578865}
+      _typeQualifiedName: DialogueLink, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  isStart: 0
+  optionText: ...
+  requiredClue: {fileID: 0}
+  requiredBoard: {fileID: 0}
+  npcResponse: fcj
+  boardToUnlockOn: {fileID: 0}
+  connectionIndexesToUnlock: 
+  boardToUnlock: {fileID: 0}
+  clueToGive: {fileID: 0}
+  outfitToGive: {fileID: 0}
+  objectIndexesToRemove: 0000000001000000
+  isGoodbye: 0
+--- !u!114 &-6823872928235288291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d75205dbc22a79a4380dd6a5c8b18f6a, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  graph: {fileID: 11400000}
+  position: {x: -456, y: -216}
+  ports:
+    keys:
+    - inLine
+    - outLine
+    values:
+    - _fieldName: inLine
+      _node: {fileID: -6823872928235288291}
+      _typeQualifiedName: DialogueLink, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: outLine
+      _node: {fileID: -6823872928235288291}
+      _typeQualifiedName: DialogueLink, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: inLine
+        node: {fileID: -8034579283630578865}
+        reroutePoints: []
+      - fieldName: inLine
+        node: {fileID: 3290559980597725897}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  isStart: 1
+  optionText: 
+  requiredClue: {fileID: 0}
+  requiredBoard: {fileID: 0}
+  npcResponse: sdgf
+  boardToUnlockOn: {fileID: 0}
+  connectionIndexesToUnlock: 
+  boardToUnlock: {fileID: 0}
+  clueToGive: {fileID: 0}
+  outfitToGive: {fileID: 0}
+  objectIndexesToRemove: 
+  isGoodbye: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 263871ce7b3a7ae4ca7e7173ec2ea97c, type: 3}
+  m_Name: test
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueGraph
+  nodes:
+  - {fileID: -6823872928235288291}
+  - {fileID: 3290559980597725897}
+  - {fileID: -8034579283630578865}
+--- !u!114 &3290559980597725897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d75205dbc22a79a4380dd6a5c8b18f6a, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  graph: {fileID: 11400000}
+  position: {x: 168, y: -344}
+  ports:
+    keys:
+    - inLine
+    - outLine
+    values:
+    - _fieldName: inLine
+      _node: {fileID: 3290559980597725897}
+      _typeQualifiedName: DialogueLink, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: outLine
+        node: {fileID: -6823872928235288291}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: outLine
+      _node: {fileID: 3290559980597725897}
+      _typeQualifiedName: DialogueLink, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  isStart: 0
+  optionText: fdgh
+  requiredClue: {fileID: 0}
+  requiredBoard: {fileID: 0}
+  npcResponse: dfh
+  boardToUnlockOn: {fileID: 0}
+  connectionIndexesToUnlock: 
+  boardToUnlock: {fileID: 0}
+  clueToGive: {fileID: 0}
+  outfitToGive: {fileID: 0}
+  objectIndexesToRemove: 
+  isGoodbye: 0

@@ -1,37 +1,79 @@
 using UnityEngine;
 using System.Collections.Generic;
 
+[System.Serializable]
+public class OutfitGraph
+{
+    public OutfitData outfit; // the outfit the player must be wearing
+    public DialogueGraph graph; // the conversation this outfit gets
+}
+
 public class NPC : Interactable
 {
-    public bool ignoreOutfit; 
-    public OutfitData requiredOutfit; // correct outfit to speak with NPC
+    public bool ignoreOutfit;
+    
     public string wrongOutfitLine = "No Horses!";
-    public string greeting = "Yes?";
-    public List<Dialogue> dialogueOptions; // base dialogue options
 
-    private List<Dialogue> currentOptions; // dialogue optionbs being shown
+    public DialogueGraph graph; // default graph
+
+    public List<OutfitGraph> outfitGraphs; // outfits NPC will talk to plus its graph
+
+    public List<GameObject> removableObjects; // objects npc can remove
+
+    private Dialogue startNode; // start node
+    private List<Dialogue> currentOptions;
 
     public override void Interact()
     {
-        if (!ignoreOutfit && OutfitManager.Instance.currentOutfit != requiredOutfit) // outfit check skipped when ignoreOutfit ticked
+        PlayInteractSound(); 
+
+        DialogueGraph chosenGraph = null; //
+
+        if (ignoreOutfit) // use default graph
         {
-            PlayInteractSound();
+            chosenGraph = graph;
+        }
+
+        if (!ignoreOutfit) // match worn outfit to graph
+        {
+            foreach (OutfitGraph pair in outfitGraphs) 
+            {
+                if (pair.outfit == OutfitManager.Instance.currentOutfit) //outfit matche
+                {
+                    chosenGraph = pair.graph; // use its graph
+
+                    break;
+                }
+            }
+        }
+
+        if (chosenGraph == null && !ignoreOutfit) // no outfit match
+        {
             DialogueUI.Instance.ShowDismissal(wrongOutfitLine); // show wrong outfit line
             return;
         }
 
-        PlayInteractSound();
-        currentOptions = dialogueOptions; // start with base options
-        DialogueUI.Instance.OpenDialogue(this, greeting, currentOptions); // start with greeting
+        if (chosenGraph == null)
+        {
+            Debug.LogError(name + " no dialogue graph");
+            return;
+        }
+
+        startNode = chosenGraph.GetStartNode(); // find start node
+
+        if (startNode == null) return; // log error
+
+        currentOptions = startNode.GetFollowUps(); // display start node output options
+        DialogueUI.Instance.OpenDialogue(this, startNode.npcResponse, currentOptions); // npc greeting
     }
 
     // called when player chooses dialogue option
-    public void ChooseOption(Dialogue option)
+    public void ChooseOption(Dialogue option) // takes node
     {
-        bool isUnlocked = option.requiredClue == null || InventoryManager.Instance.collectedClues.Contains(option.requiredClue); //can player pick option based on unlocked data
+        bool isUnlocked = option.requiredClue == null || InventoryManager.Instance.collectedClues.Contains(option.requiredClue); // can player pick option based on unlocked data
         if (!isUnlocked) return;
 
-        // if option picked, UI closes
+        // option picked, UI close
         if (option.isGoodbye)
         {
             DialogueUI.Instance.CloseDialogue();
@@ -40,13 +82,13 @@ public class NPC : Interactable
 
 
         // option unlocks connection
-        if (option.boardToUnlockOn != null && option.connectionIndexesToUnlock != null) 
+        if (option.boardToUnlockOn != null && option.connectionIndexesToUnlock != null)
         {
-            foreach (int index in option.connectionIndexesToUnlock) 
+            foreach (int index in option.connectionIndexesToUnlock)
             {
-                if (index >= 0 && index < option.boardToUnlockOn.connections.Count) 
+                if (index >= 0 && index < option.boardToUnlockOn.connections.Count)
                 {
-                    ClueConnection connection = option.boardToUnlockOn.connections[index]; 
+                    ClueConnection connection = option.boardToUnlockOn.connections[index];
                     DeductionManager.Instance.UnlockConnection(connection); // sets connection active in ded board
                 }
             }
@@ -54,41 +96,49 @@ public class NPC : Interactable
 
         if (option.boardToUnlock != null)
         {
-            option.boardToUnlock.isUnlocked = true;
+            DeductionManager.Instance.UnlockBoard(option.boardToUnlock); 
 
         }
 
-       
-        
-            if (option.clueToGive != null && !InventoryManager.Instance.collectedClues.Contains(option.clueToGive)) // this option gives a clue
+        if (option.clueToGive != null && !InventoryManager.Instance.collectedClues.Contains(option.clueToGive)) // give clue
         {
-                InventoryManager.Instance.AddClue(option.clueToGive); // add the clue to the inventory, same call the clue pickup uses
-                NotificationUI.Instance.Show("Clue found: " + option.clueToGive.clueName, option.clueToGive.itemImage); // popup with the clue's name and artwork
-            }
+            InventoryManager.Instance.AddClue(option.clueToGive); // add clue to inventory
+            NotificationUI.Instance.Show("Clue found: " + option.clueToGive.clueName, option.clueToGive.itemImage); // popup
+        }
 
-            if (option.outfitToGive != null && !OutfitManager.Instance.ownedOutfits.Contains(option.outfitToGive)) // this option gives an outfit
+        if (option.outfitToGive != null && !OutfitManager.Instance.ownedOutfits.Contains(option.outfitToGive)) //  give outfit
         {
-                OutfitManager.Instance.AddOutfit(option.outfitToGive); // add the outfit to the players outfit inventory, same call the outfit pickup uses
-                NotificationUI.Instance.Show("Outfit found: " + option.outfitToGive.outfitName, option.outfitToGive.itemImage); // popup with the outfit's name and artwork
-            }
+            OutfitManager.Instance.AddOutfit(option.outfitToGive); // add outfit to inventory
+            NotificationUI.Instance.Show("Outfit found: " + option.outfitToGive.outfitName, option.outfitToGive.itemImage); // popup
+        }
 
-          
-       
 
-        if (option.objectsToRemove != null)
+
+        if (option.objectIndexesToRemove != null) //remove objects
         {
-            foreach (GameObject obj in option.objectsToRemove) // check each object
+            foreach (int index in option.objectIndexesToRemove) // check each number
             {
-                if (obj != null) 
+                if (index >= 0 && index < removableObjects.Count)
                 {
-                    WorldStateManager.Remove(obj); //switch object off forever
+                    if (removableObjects[index] != null)
+                    {
+                        WorldStateManager.Remove(removableObjects[index]); // switch object off forever
+                    }
                 }
             }
         }
 
-        currentOptions = (option.followUpOptions != null && option.followUpOptions.Count > 0)
-            ? option.followUpOptions
-            : dialogueOptions;
+        List<Dialogue> followUps = option.GetFollowUps(); // all outputs
+
+        if (followUps.Count > 0)
+        {
+            currentOptions = followUps;
+        }
+
+        if (followUps.Count == 0)
+        {
+            currentOptions = startNode.GetFollowUps();
+        }
 
         DialogueUI.Instance.UpdateDialogue(option.npcResponse, currentOptions); // show response and next options
     }

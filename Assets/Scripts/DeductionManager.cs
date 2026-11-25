@@ -78,6 +78,16 @@ public class DeductionManager : MonoBehaviour
 
     }
 
+    public void UnlockBoard(DeductionBoardData board)
+    {
+        if (board.isUnlocked) return; // already unlocked, no popup
+
+        board.isUnlocked = true; // unlock the board
+        Debug.Log(board.boardName + " unlocked!");
+
+        NotificationUI.Instance.Show("New deduction board: " + board.boardName); // popup
+    }
+
     void CheckCompletion()
     {
 

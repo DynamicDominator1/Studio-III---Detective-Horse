@@ -9,14 +9,16 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 5.0f; // normal walking speed
     public float runSpeed = 8.0f; // run speed
     public float rotationSpeed = 720f; // turn speed 
-    public float turnHold = 0.06f; 
+    public float turnHold = 0.06f;
     public float gravity = -9.81f;
     private float verticalVelocity;
 
-    private float turnTimer; 
-    private Vector3 lastDiagonalDirection; 
+    public float animationDamping = 0.1f; 
+    private float turnTimer;
+    private Vector3 lastDiagonalDirection;
 
     private CharacterController controller;
+    private Animator animator; 
 
     void Awake()
     {
@@ -31,7 +33,11 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        if (UIStateManager.Instance.isUIOpen) return; // cannot move while ui open
+        if (UIStateManager.Instance.isUIOpen)
+        {
+            UpdateAnimator(0f); // pause animation
+            return; // cannot move while ui open
+        }
 
         moveInput = moveAction.ReadValue<Vector2>(); // current move input
         Vector3 moveDirection = new Vector3(moveInput.x, 0f, moveInput.y); // convert to vector 3 (3D)
@@ -42,6 +48,15 @@ public class PlayerMovement : MonoBehaviour
         {
             currentSpeed = runSpeed; // set run speed
         }
+
+        float animationSpeed = 0f; // animation speed
+
+        if (moveDirection.sqrMagnitude > 0.01f) // if player moving
+        {
+            animationSpeed = currentSpeed; 
+        }
+
+        UpdateAnimator(animationSpeed); 
 
         bool isDiagonal = Mathf.Abs(moveInput.x) > 0.5f && Mathf.Abs(moveInput.y) > 0.5f; // true when both axes are held at once
 
@@ -82,5 +97,18 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 gravityMove = new Vector3(0f, verticalVelocity, 0f); // y movements from gravity
         controller.Move(gravityMove * Time.deltaTime); // apply y movement
+    }
+
+   
+    void UpdateAnimator(float targetSpeed)
+    {
+        if (animator == null) 
+        {
+            animator = GetComponentInChildren<Animator>(); 
+        }
+
+        if (animator == null) return; 
+
+        animator.SetFloat("Speed", targetSpeed, animationDamping, Time.deltaTime); // eases the Speed number towards the target
     }
 }

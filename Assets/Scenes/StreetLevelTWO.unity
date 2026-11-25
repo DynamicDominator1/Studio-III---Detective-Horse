@@ -1012,6 +1012,78 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1883370808eaf594b8c6292313a6ceca, type: 3}
   m_PrefabInstance: {fileID: 229757372}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &231186023
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: ccc8dc914925a144da3a3790a140c2e5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccc8dc914925a144da3a3790a140c2e5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccc8dc914925a144da3a3790a140c2e5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccc8dc914925a144da3a3790a140c2e5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 34.88784
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccc8dc914925a144da3a3790a140c2e5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.399
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccc8dc914925a144da3a3790a140c2e5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -92.53
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccc8dc914925a144da3a3790a140c2e5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccc8dc914925a144da3a3790a140c2e5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccc8dc914925a144da3a3790a140c2e5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccc8dc914925a144da3a3790a140c2e5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccc8dc914925a144da3a3790a140c2e5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccc8dc914925a144da3a3790a140c2e5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccc8dc914925a144da3a3790a140c2e5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ccc8dc914925a144da3a3790a140c2e5, type: 3}
+      propertyPath: m_Name
+      value: Horse Nakey Walk
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ccc8dc914925a144da3a3790a140c2e5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1911817082}
+  m_SourcePrefab: {fileID: 100100000, guid: ccc8dc914925a144da3a3790a140c2e5, type: 3}
 --- !u!1001 &237048335
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1185,7 +1257,7 @@ Transform:
   m_GameObject: {fileID: 218450027}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.69492346, z: -0, w: 0.7190838}
-  m_LocalPosition: {x: -2.9758396, y: -3.1265101, z: -7.0675583}
+  m_LocalPosition: {x: -1.71, y: -3.1265101, z: -7.0675583}
   m_LocalScale: {x: 1.6637378, y: 3.475, z: 0.14101}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1821,104 +1893,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf5fc43e772f394088f2053a643d081, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPC
-  interactionName: Cop
+  interactionName: Det. Absconde
   highlightMaterial: {fileID: 2100000, guid: 2180395c4d877a040afe5beff196a163, type: 2}
   interactSound: {fileID: 8300000, guid: fa5bdb31a19089a4db96c5e5ea47e2e4, type: 3}
   ignoreOutfit: 1
-  requiredOutfit: {fileID: 0}
   wrongOutfitLine: 
-  greeting: 'GET AWAY FROM ME! UNLESS YOU DID THIS, THEN CONFESS! '
-  dialogueOptions:
-  - optionText: Whats going on?
-    requiredClue: {fileID: 0}
-    requiredBoard: {fileID: 0}
-    npcResponse: 'ITS THIS CONFOUNDED CASE, IT''S CONFOUNDING ME! SHIT! '
-    boardToUnlockOn: {fileID: 0}
-    connectionIndexesToUnlock: 
-    boardToUnlock: {fileID: 0}
-    clueToGive: {fileID: 0}
-    outfitToGive: {fileID: 0}
-    itemGiven: 0
-    objectsToRemove: []
-    followUpOptions:
-    - optionText: Uhh...
-      requiredClue: {fileID: 0}
-      requiredBoard: {fileID: 0}
-      npcResponse: 'ALL WHILE I''M just over here TRYING TO PLAY GAMES ON  MY PHONE!
-        THE BAD GUY DOING THIS CRIME SHOULD BE IN  THE CAGE, A REAL ONE, AND NOT
-        FASHIONED OF HIS OWN  CHOICES AND OBLIGATIONS LIKE MINE CERTAINLY IS! MY 
-        PARENTS WERE RIGHT, I NEVER SHOULD HAVE GONE TO LAW  SCHOOL! '
-      boardToUnlockOn: {fileID: 0}
-      connectionIndexesToUnlock: 
-      boardToUnlock: {fileID: 0}
-      clueToGive: {fileID: 0}
-      outfitToGive: {fileID: 0}
-      itemGiven: 0
-      objectsToRemove: []
-      followUpOptions:
-      - optionText: 
-        requiredClue: {fileID: 0}
-        requiredBoard: {fileID: 0}
-        npcResponse: 
-        boardToUnlockOn: {fileID: 0}
-        connectionIndexesToUnlock: 
-        boardToUnlock: {fileID: 0}
-        clueToGive: {fileID: 0}
-        outfitToGive: {fileID: 0}
-        itemGiven: 0
-        objectsToRemove: []
-        followUpOptions: []
-        isGoodbye: 0
-      isGoodbye: 0
-    - optionText: Could I take the reigns on this case?
-      requiredClue: {fileID: 0}
-      requiredBoard: {fileID: 0}
-      npcResponse: 'THIS FARMER WANTS TO INSPECT SOMETHING OTHER THAN A  HAYSTACK
-        IN PURSUIT OF HIS TREASURED PIN? HA! WHAT A JOKE!  But if you DID solve the
-        case that would ALSO BE VERY CHILL  FOR ME, and also YOU would get to live
-        out your TWISTED  REDNECK FANTASIES! It''s MUTUALLY ASSURED DESTRUCTION!
-        TAKE  MY FIT and my DEDUCTION BOARD!  '
-      boardToUnlockOn: {fileID: 0}
-      connectionIndexesToUnlock: 
-      boardToUnlock: {fileID: 11400000, guid: 561c32370b8fcd345b2c5c892f7d6762, type: 2}
-      clueToGive: {fileID: 0}
-      outfitToGive: {fileID: 11400000, guid: a842be62f29526d4591c7afedbd5ee51, type: 2}
-      itemGiven: 0
-      objectsToRemove: []
-      followUpOptions: []
-      isGoodbye: 0
-    - optionText: Have you spoken to that Officer yet?
-      requiredClue: {fileID: 0}
-      requiredBoard: {fileID: 0}
-      npcResponse: 'I''M SCARED OF LAW ENFORCEMENT! IF HE DETECTS THAT I PIRATED
-        AN ANIME, I''M FINISHED!  '
-      boardToUnlockOn: {fileID: 0}
-      connectionIndexesToUnlock: 
-      boardToUnlock: {fileID: 0}
-      clueToGive: {fileID: 0}
-      outfitToGive: {fileID: 0}
-      itemGiven: 0
-      objectsToRemove: []
-      followUpOptions: []
-      isGoodbye: 0
-    - optionText: Okay then. Goodbye
-      requiredClue: {fileID: 0}
-      requiredBoard: {fileID: 0}
-      npcResponse: 'THIS FARMER WANTS TO INSPECT SOMETHING OTHER THAN A  HAYSTACK
-        IN PURSUIT OF HIS TREASURED PIN? HA! WHAT A JOKE!  But if you DID solve the
-        case that would ALSO BE VERY CHILL  FOR ME, and also YOU would get to live
-        out your TWISTED  REDNECK FANTASIES! It''s MUTUALLY ASSURED DESTRUCTION!
-        TAKE  MY FIT and my DEDUCTION BOARD!  '
-      boardToUnlockOn: {fileID: 0}
-      connectionIndexesToUnlock: 
-      boardToUnlock: {fileID: 0}
-      clueToGive: {fileID: 0}
-      outfitToGive: {fileID: 0}
-      itemGiven: 0
-      objectsToRemove: []
-      followUpOptions: []
-      isGoodbye: 1
-    isGoodbye: 0
+  graph: {fileID: 11400000, guid: 2fc67440dc6132940a40cef1903c71db, type: 2}
+  outfitGraphs: []
+  removableObjects: []
 --- !u!136 &456003659
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3691,94 +3673,15 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: 2180395c4d877a040afe5beff196a163, type: 2}
   interactSound: {fileID: 8300000, guid: fa5bdb31a19089a4db96c5e5ea47e2e4, type: 3}
   ignoreOutfit: 0
-  requiredOutfit: {fileID: 11400000, guid: a842be62f29526d4591c7afedbd5ee51, type: 2}
-  wrongOutfitLine: ' Move along now, civilian! Nothing to see here but the  destructive
-    aftermath of a vehicular catastrophe!'
-  greeting: 'Ah you have availed yourself at last, Detective! Some vandal has given
-    the runaround to this low-down and dirty dive! However, the fact is that swarthy
-    fellow behind the counter has conducted himself in sinister affairs that dwarf
-    the likes of petty theft and burglary, yet simply in favor of the conferring
-    of financial dividends we insulate him from consequences first and foremost!
-    It''s very funny! It''s called observational comedy, Detective!  '
-  dialogueOptions:
-  - optionText: 'Who are you? '
-    requiredClue: {fileID: 0}
-    requiredBoard: {fileID: 0}
-    npcResponse: I am Barnabas Block, sheriff apparent to this sordid, languishing
-      township! Though I may be lacking in many of the ethical scruples associated
-      with my venerable profession, I do so relish the accompanying benefits!
-    boardToUnlockOn: {fileID: 0}
-    connectionIndexesToUnlock: 
-    boardToUnlock: {fileID: 0}
-    clueToGive: {fileID: 0}
-    outfitToGive: {fileID: 0}
-    itemGiven: 0
-    objectsToRemove: []
-    followUpOptions: []
-    isGoodbye: 0
-  - optionText: What's the situation, Officer?
-    requiredClue: {fileID: 0}
-    requiredBoard: {fileID: 0}
-    npcResponse: Dire I'm afraid, the hoodlum has fled the scene thereby  leaving
-      a path of destruction in his wake, befouled by  unsightly tire tracks not entirely
-      dissimilar to the  persistent purple distension lines adorning this  gentlemen's
-      engorged abdomen, scars of a warrior sort who  battles daily the turgid results
-      of his own patisserie  associated indulgences.(he's weeping)
-    boardToUnlockOn: {fileID: 0}
-    connectionIndexesToUnlock: 
-    boardToUnlock: {fileID: 0}
-    clueToGive: {fileID: 0}
-    outfitToGive: {fileID: 0}
-    itemGiven: 0
-    objectsToRemove: []
-    followUpOptions: []
-    isGoodbye: 0
-  - optionText: 'Do you know who''s responsible? '
-    requiredClue: {fileID: 0}
-    requiredBoard: {fileID: 0}
-    npcResponse: "Unfortunately I must concede the vexing rogue is as of yet  at
-      large. Now, I can discern by appearance alone that you  are a working man,
-      a man of integrity, a mans man, so allow  me to extend some heedworthy advice.
-      one man\u2019s mans\u2019 man is  another man\u2019s\u2026 prime suspect. "
-    boardToUnlockOn: {fileID: 0}
-    connectionIndexesToUnlock: 
-    boardToUnlock: {fileID: 0}
-    clueToGive: {fileID: 0}
-    outfitToGive: {fileID: 0}
-    itemGiven: 0
-    objectsToRemove: []
-    followUpOptions: []
-    isGoodbye: 0
-  - optionText: Permit me passage beyond this domain, brave sentinel!
-    requiredClue: {fileID: 0}
-    requiredBoard: {fileID: 0}
-    npcResponse: ' For what reason dost thou speak with such pomposity? Art  thou
-      perhaps a candy ass? Though, I suppose for a fellow  official a sanction must
-      be made. Proceed! '
-    boardToUnlockOn: {fileID: 0}
-    connectionIndexesToUnlock: 
-    boardToUnlock: {fileID: 0}
-    clueToGive: {fileID: 0}
-    outfitToGive: {fileID: 0}
-    itemGiven: 0
-    objectsToRemove:
-    - {fileID: 1235133321}
-    - {fileID: 37884585}
-    followUpOptions:
-    - optionText: Thank you kind Sir! I shall be on my way
-      requiredClue: {fileID: 0}
-      requiredBoard: {fileID: 0}
-      npcResponse: 
-      boardToUnlockOn: {fileID: 0}
-      connectionIndexesToUnlock: 
-      boardToUnlock: {fileID: 0}
-      clueToGive: {fileID: 0}
-      outfitToGive: {fileID: 0}
-      itemGiven: 0
-      objectsToRemove: []
-      followUpOptions: []
-      isGoodbye: 1
-    isGoodbye: 0
+  wrongOutfitLine: Move along now, civilian! Nothing to see here but the destructive
+    aftermath of a vehicular catastrophe!
+  graph: {fileID: 0}
+  outfitGraphs:
+  - outfit: {fileID: 11400000, guid: a842be62f29526d4591c7afedbd5ee51, type: 2}
+    graph: {fileID: 11400000, guid: 0954da72b096d014fa85e443f8a9131b, type: 2}
+  removableObjects:
+  - {fileID: 1235133321}
+  - {fileID: 37884585}
 --- !u!1 &1018349498
 GameObject:
   m_ObjectHideFlags: 0
@@ -8348,6 +8251,33 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7600838710330327549, guid: 936c9f231d4a38643b6146088363c0cf, type: 3}
+--- !u!1 &1911817081 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ccc8dc914925a144da3a3790a140c2e5, type: 3}
+  m_PrefabInstance: {fileID: 231186023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1911817082
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911817081}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4beae9fbb83c7be4ea6cf2b067f85b60, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1932479638
 GameObject:
   m_ObjectHideFlags: 0
@@ -8875,6 +8805,105 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4191138278409039899, guid: 936c9f231d4a38643b6146088363c0cf, type: 3}
+--- !u!1001 &2050021425
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c8a3b8d31dcc69f45aa183d63e21b9b3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c8a3b8d31dcc69f45aa183d63e21b9b3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c8a3b8d31dcc69f45aa183d63e21b9b3, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c8a3b8d31dcc69f45aa183d63e21b9b3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 45.02535
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c8a3b8d31dcc69f45aa183d63e21b9b3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.7184153
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c8a3b8d31dcc69f45aa183d63e21b9b3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -94.6681
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c8a3b8d31dcc69f45aa183d63e21b9b3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c8a3b8d31dcc69f45aa183d63e21b9b3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c8a3b8d31dcc69f45aa183d63e21b9b3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c8a3b8d31dcc69f45aa183d63e21b9b3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c8a3b8d31dcc69f45aa183d63e21b9b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c8a3b8d31dcc69f45aa183d63e21b9b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c8a3b8d31dcc69f45aa183d63e21b9b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a3b8d31dcc69f45aa183d63e21b9b3, type: 3}
+      propertyPath: m_Name
+      value: Horse Detective Idle Test(1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c8a3b8d31dcc69f45aa183d63e21b9b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2050021427}
+  m_SourcePrefab: {fileID: 100100000, guid: c8a3b8d31dcc69f45aa183d63e21b9b3, type: 3}
+--- !u!1 &2050021426 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c8a3b8d31dcc69f45aa183d63e21b9b3, type: 3}
+  m_PrefabInstance: {fileID: 2050021425}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2050021427
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050021426}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4beae9fbb83c7be4ea6cf2b067f85b60, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2092813161
 GameObject:
   m_ObjectHideFlags: 0
@@ -9600,3 +9629,5 @@ SceneRoots:
   - {fileID: 784580119}
   - {fileID: 1385977886}
   - {fileID: 481364985}
+  - {fileID: 231186023}
+  - {fileID: 2050021425}

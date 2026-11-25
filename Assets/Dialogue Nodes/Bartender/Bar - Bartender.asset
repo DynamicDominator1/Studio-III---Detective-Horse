@@ -1,0 +1,545 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7078989718901282499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d75205dbc22a79a4380dd6a5c8b18f6a, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  graph: {fileID: 11400000}
+  position: {x: 632, y: -536}
+  ports:
+    keys:
+    - inLine
+    - outLine
+    values:
+    - _fieldName: inLine
+      _node: {fileID: -7078989718901282499}
+      _typeQualifiedName: DialogueLink, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: outLine
+        node: {fileID: 8756029604540731203}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: outLine
+      _node: {fileID: -7078989718901282499}
+      _typeQualifiedName: DialogueLink, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: inLine
+        node: {fileID: 8850565936718395565}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  isStart: 0
+  optionText: ...
+  requiredClue: {fileID: 0}
+  requiredBoard: {fileID: 0}
+  npcResponse: apparently - and this is hearsay bear in mind - an old pickup bearing
+    apples came careening through here and made it into the distillery,
+  boardToUnlockOn: {fileID: 0}
+  connectionIndexesToUnlock: 
+  boardToUnlock: {fileID: 0}
+  clueToGive: {fileID: 0}
+  outfitToGive: {fileID: 0}
+  objectIndexesToRemove: 
+  isGoodbye: 0
+--- !u!114 &-3833302853539376526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d75205dbc22a79a4380dd6a5c8b18f6a, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  graph: {fileID: 11400000}
+  position: {x: -2136, y: 1496}
+  ports:
+    keys:
+    - inLine
+    - outLine
+    values:
+    - _fieldName: inLine
+      _node: {fileID: -3833302853539376526}
+      _typeQualifiedName: DialogueLink, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: outLine
+        node: {fileID: -387001857203891691}
+        reroutePoints: []
+      - fieldName: outLine
+        node: {fileID: -1752982194268858075}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: outLine
+      _node: {fileID: -3833302853539376526}
+      _typeQualifiedName: DialogueLink, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  isStart: 0
+  optionText: See ya
+  requiredClue: {fileID: 0}
+  requiredBoard: {fileID: 0}
+  npcResponse: 
+  boardToUnlockOn: {fileID: 0}
+  connectionIndexesToUnlock: 
+  boardToUnlock: {fileID: 0}
+  clueToGive: {fileID: 0}
+  outfitToGive: {fileID: 0}
+  objectIndexesToRemove: 
+  isGoodbye: 1
+--- !u!114 &-1752982194268858075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d75205dbc22a79a4380dd6a5c8b18f6a, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  graph: {fileID: 11400000}
+  position: {x: -2152, y: -120}
+  ports:
+    keys:
+    - inLine
+    - outLine
+    values:
+    - _fieldName: inLine
+      _node: {fileID: -1752982194268858075}
+      _typeQualifiedName: DialogueLink, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: outLine
+      _node: {fileID: -1752982194268858075}
+      _typeQualifiedName: DialogueLink, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: inLine
+        node: {fileID: 3156247576708276638}
+        reroutePoints: []
+      - fieldName: inLine
+        node: {fileID: -387001857203891691}
+        reroutePoints: []
+      - fieldName: inLine
+        node: {fileID: 5363696517017282677}
+        reroutePoints: []
+      - fieldName: inLine
+        node: {fileID: -3833302853539376526}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  isStart: 1
+  optionText: 
+  requiredClue: {fileID: 0}
+  requiredBoard: {fileID: 0}
+  npcResponse: "What\u2019s up, brother? Bring it in! I didn\u2019t see you at the
+    felony theft and dogfighting social last weekend, you must be from out of town."
+  boardToUnlockOn: {fileID: 0}
+  connectionIndexesToUnlock: 
+  boardToUnlock: {fileID: 0}
+  clueToGive: {fileID: 0}
+  outfitToGive: {fileID: 0}
+  objectIndexesToRemove: 
+  isGoodbye: 0
+--- !u!114 &-387001857203891691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d75205dbc22a79a4380dd6a5c8b18f6a, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  graph: {fileID: 11400000}
+  position: {x: -1528, y: -744}
+  ports:
+    keys:
+    - inLine
+    - outLine
+    values:
+    - _fieldName: inLine
+      _node: {fileID: -387001857203891691}
+      _typeQualifiedName: DialogueLink, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: outLine
+        node: {fileID: -1752982194268858075}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: outLine
+      _node: {fileID: -387001857203891691}
+      _typeQualifiedName: DialogueLink, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: inLine
+        node: {fileID: 5363696517017282677}
+        reroutePoints: []
+      - fieldName: inLine
+        node: {fileID: 3156247576708276638}
+        reroutePoints: []
+      - fieldName: inLine
+        node: {fileID: -3833302853539376526}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  isStart: 0
+  optionText: Are you a criminal?
+  requiredClue: {fileID: 0}
+  requiredBoard: {fileID: 0}
+  npcResponse: "Some bigots think of Italians as criminals. Just because I\u2019m
+    Italian, it doesn\u2019t make me a crook. In reality, all bartenders are criminals!"
+  boardToUnlockOn: {fileID: 0}
+  connectionIndexesToUnlock: 
+  boardToUnlock: {fileID: 0}
+  clueToGive: {fileID: 0}
+  outfitToGive: {fileID: 0}
+  objectIndexesToRemove: 
+  isGoodbye: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 263871ce7b3a7ae4ca7e7173ec2ea97c, type: 3}
+  m_Name: Bar - Bartender
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueGraph
+  nodes:
+  - {fileID: -1752982194268858075}
+  - {fileID: 3156247576708276638}
+  - {fileID: 8756029604540731203}
+  - {fileID: -7078989718901282499}
+  - {fileID: 8850565936718395565}
+  - {fileID: 5363696517017282677}
+  - {fileID: 1722893556421183040}
+  - {fileID: -3833302853539376526}
+  - {fileID: -387001857203891691}
+--- !u!114 &1722893556421183040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d75205dbc22a79a4380dd6a5c8b18f6a, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  graph: {fileID: 11400000}
+  position: {x: 440, y: 120}
+  ports:
+    keys:
+    - inLine
+    - outLine
+    values:
+    - _fieldName: inLine
+      _node: {fileID: 1722893556421183040}
+      _typeQualifiedName: DialogueLink, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: outLine
+        node: {fileID: 5363696517017282677}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: outLine
+      _node: {fileID: 1722893556421183040}
+      _typeQualifiedName: DialogueLink, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  isStart: 0
+  optionText: Fuck off, thats my wallet
+  requiredClue: {fileID: 0}
+  requiredBoard: {fileID: 0}
+  npcResponse: 
+  boardToUnlockOn: {fileID: 0}
+  connectionIndexesToUnlock: 
+  boardToUnlock: {fileID: 0}
+  clueToGive: {fileID: 0}
+  outfitToGive: {fileID: 0}
+  objectIndexesToRemove: 
+  isGoodbye: 1
+--- !u!114 &3156247576708276638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d75205dbc22a79a4380dd6a5c8b18f6a, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  graph: {fileID: 11400000}
+  position: {x: -632, y: -408}
+  ports:
+    keys:
+    - inLine
+    - outLine
+    values:
+    - _fieldName: inLine
+      _node: {fileID: 3156247576708276638}
+      _typeQualifiedName: DialogueLink, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: outLine
+        node: {fileID: -387001857203891691}
+        reroutePoints: []
+      - fieldName: outLine
+        node: {fileID: -1752982194268858075}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: outLine
+      _node: {fileID: 3156247576708276638}
+      _typeQualifiedName: DialogueLink, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: inLine
+        node: {fileID: 8756029604540731203}
+        reroutePoints: []
+      - fieldName: inLine
+        node: {fileID: 5363696517017282677}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  isStart: 0
+  optionText: What happened here?
+  requiredClue: {fileID: 0}
+  requiredBoard: {fileID: 0}
+  npcResponse: The business with the safe is being handled, a simple opportunist
+    we needn't be concerned about who took advantage of the chaos.
+  boardToUnlockOn: {fileID: 0}
+  connectionIndexesToUnlock: 
+  boardToUnlock: {fileID: 0}
+  clueToGive: {fileID: 0}
+  outfitToGive: {fileID: 0}
+  objectIndexesToRemove: 
+  isGoodbye: 0
+--- !u!114 &5363696517017282677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d75205dbc22a79a4380dd6a5c8b18f6a, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  graph: {fileID: 11400000}
+  position: {x: -136, y: 184}
+  ports:
+    keys:
+    - inLine
+    - outLine
+    values:
+    - _fieldName: inLine
+      _node: {fileID: 5363696517017282677}
+      _typeQualifiedName: DialogueLink, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: outLine
+        node: {fileID: 3156247576708276638}
+        reroutePoints: []
+      - fieldName: outLine
+        node: {fileID: -387001857203891691}
+        reroutePoints: []
+      - fieldName: outLine
+        node: {fileID: -1752982194268858075}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: outLine
+      _node: {fileID: 5363696517017282677}
+      _typeQualifiedName: DialogueLink, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: inLine
+        node: {fileID: 1722893556421183040}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  isStart: 0
+  optionText: Have you seen this wallet before?
+  requiredClue: {fileID: 11400000, guid: 2aee82a24b0bafa4d8475a5b3f52d659, type: 2}
+  requiredBoard: {fileID: 0}
+  npcResponse: Don't know nothing about that... whoa! I say that a lot, but this
+    is the first time I really mean it!
+  boardToUnlockOn: {fileID: 11400000, guid: 561c32370b8fcd345b2c5c892f7d6762, type: 2}
+  connectionIndexesToUnlock: 0300000005000000
+  boardToUnlock: {fileID: 0}
+  clueToGive: {fileID: 0}
+  outfitToGive: {fileID: 0}
+  objectIndexesToRemove: 
+  isGoodbye: 0
+--- !u!114 &8756029604540731203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d75205dbc22a79a4380dd6a5c8b18f6a, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  graph: {fileID: 11400000}
+  position: {x: 200, y: -536}
+  ports:
+    keys:
+    - inLine
+    - outLine
+    values:
+    - _fieldName: inLine
+      _node: {fileID: 8756029604540731203}
+      _typeQualifiedName: DialogueLink, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: outLine
+        node: {fileID: 3156247576708276638}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: outLine
+      _node: {fileID: 8756029604540731203}
+      _typeQualifiedName: DialogueLink, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: inLine
+        node: {fileID: -7078989718901282499}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  isStart: 0
+  optionText: Thats good to know
+  requiredClue: {fileID: 0}
+  requiredBoard: {fileID: 0}
+  npcResponse: "Speaking of, I\u2019ve got a tip as to what went down, why the cops
+    here are so worked up, privileged intel, it\u2019s not even on the dark web group
+    chats (the GrapeVine) yet."
+  boardToUnlockOn: {fileID: 0}
+  connectionIndexesToUnlock: 
+  boardToUnlock: {fileID: 0}
+  clueToGive: {fileID: 0}
+  outfitToGive: {fileID: 0}
+  objectIndexesToRemove: 
+  isGoodbye: 0
+--- !u!114 &8850565936718395565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d75205dbc22a79a4380dd6a5c8b18f6a, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  graph: {fileID: 11400000}
+  position: {x: 1048, y: -536}
+  ports:
+    keys:
+    - inLine
+    - outLine
+    values:
+    - _fieldName: inLine
+      _node: {fileID: 8850565936718395565}
+      _typeQualifiedName: DialogueLink, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: outLine
+        node: {fileID: -7078989718901282499}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: outLine
+      _node: {fileID: 8850565936718395565}
+      _typeQualifiedName: DialogueLink, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  isStart: 0
+  optionText: ...
+  requiredClue: {fileID: 0}
+  requiredBoard: {fileID: 0}
+  npcResponse: now nobody can find a way inside! All very suspect, but unrelated
+    of course to our wider ambitions as a malevolent bartending cabal.
+  boardToUnlockOn: {fileID: 0}
+  connectionIndexesToUnlock: 
+  boardToUnlock: {fileID: 0}
+  clueToGive: {fileID: 0}
+  outfitToGive: {fileID: 0}
+  objectIndexesToRemove: 
+  isGoodbye: 0
